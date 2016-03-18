@@ -1,0 +1,11 @@
+<script type="text/javascript" src="/js/iframe-custom.js"></script>
+<script type="text/javascript" src="/js/pandora-dialog.js"></script>
+<script type="text/javascript" src="/js/lvmama-dialog.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.expand.js"></script>
+<script type="text/javascript" src="/js/messages_zh.js"></script>
+<script type="text/javascript" src="/js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/js/jquery.lvtip.js"></script>
+<script type="text/javascript" src="/js/newpanel.js"></script>
+<script type="text/javascript" src="/js/jquery.jsonSuggest-2.min.js"></script>
+<script type="text/javascript" src="/js/log.js"></script>

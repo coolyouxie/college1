@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.study.college.persistence.mapper.TeacherMapper">
+	<resultMap id="resultMap" type="com.study.college.dto.human.Teacher">
+		<id column="ID" jdbcType="DECIMAL" property="id" />
+	    <result column="NAME" jdbcType="VARCHAR" property="name" />
+	    <result column="BIRTHDAY" jdbcType="TIMESTAMP" property="birthday" />
+	    <result column="TYPE" jdbcType="VARCHAR" property="type" />
+	    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+	    <result column="CODE" jdbcType="VARCHAR" property="code" />
+	    <result column="MAJOR_ID" jdbcType="DECIMAL" property="major.id" />
+	    <result column="LEVEL" jdbcType="VARCHAR" property="level" />
+	    <result column="HEAD_MASTER" jdbcType="VARCHAR" property="headMaster" />
+	    <result column="CREATE_TIME" jdbcType="VARCHAR" property="createTime" />
+	    <result column="UPDATE_TIME" jdbcType="VARCHAR" property="updateTime" />
+		<!-- <association property="major" column="MAJOR_ID"
+			select="com.lvmama.study.persistence.mapper.MajorMapper.getById" /> -->
+	</resultMap>
+	
+	<sql id="select_columns">
+		ID, NAME,BIRTHDAY,TYPE, SEX, CODE, MAJOR_ID, LEVEL, HEAD_MASTER,CREATE_TIME,UPDATE_TIME
+	</sql>
+	
+	<sql id="insert_columns">
+		NAME,BIRTHDAY,TYPE, SEX, CODE, MAJOR_ID, LEVEL, HEAD_MASTER,CREATE_TIME,UPDATE_TIME
+	</sql>
+	
+	<select id="getById" resultMap="resultMap">
+		select * from t_teacher where id =#{id}
+	</select>
+	
+	<update id="updateById">
+		UPDATE T_TEACHER
+		<set>
+			<if test="i.name != null and i.name != ''">
+				name = #{i.name,jdbcType=VARCHAR},
+			</if>
+			<if test="i.major != null and i.major.id != null and i.major.id != ''">
+				major_id = #{i.major.id,jdbcType=DECIMAL},
+			</if>
+			<if test="i.level != null and i.level != '' ">
+				arrv_city_id = #{i.arrvCity.id,jdbcType=DECIMAL},
+			</if>
+			<if test="i.age != null and i.age != ''">
+				birthday = #{i.birthday,jdbcType=TIMESTAMP},
+			</if>
+			<if test="i.sex != null and i.sex != ''">
+				sex = #{i.sex,jdbcType=VARCHAR},
+			</if>
+			<if test="i.number != null and i.number != '' ">
+				number = #{i.number,jdbcType=VARCHAR},
+			</if>
+			<if test="i.headMaster != null and i.headMaster != ''">
+	        	HEAD_MASTER = #{i.headMaster,jdbcType=VARCHAR},
+	      	</if>
+			type = 'TEACHER',
+			update_time = sysdate
+    	</set>
+    	WHERE ID = #{id,jdbcType=DECIMAL}
+	</update>
+
+	<select id="count" resultType="java.lang.Integer">
+		SELECT count(1) FROM t_teacher
+		<trim prefix="WHERE" prefixOverrides="AND">
+			<if test="name !=null and name != ''">
+				AND	name = #{name,jdbcType=VARCHAR}
+			</if>
+			<if test="birthday != null and birthday != ''">
+				and birthday = #{birthday,jdbcType=TIMESTAMP}
+			</if>
+			<if test="sex != null and sex != ''">
+				and sex = #{sex,jdbcType=VARCHAR}
+			</if>
+			<if test="level != null and level != ''">
+				and level >= #{level,jdbcType=VARCHAR}
+			</if>
+			<if test="type != null and type != ''">
+				and type >= #{type,jdbcType=VARCHAR}
+			</if>
+		</trim>
+   	</select>
+
+    <!-- 根据productId获取product -->
+    <select id="query" resultMap="resultMap">
+    	<include refid="ORACLE.paginationStart" />
+			SELECT <include refid="select_columns"/> FROM t_teacher
+			<trim prefix="WHERE" prefixOverrides="AND">
+					<if test="name !=null and name != ''">
+						AND	name = #{name,jdbcType=VARCHAR}
+					</if>
+					<if test="birthday != null and birthday != ''">
+						and birthday = #{birthday,jdbcType=TIMESTAMP}
+					</if>
+					<if test="sex != null and sex != ''">
+						and sex = #{sex,jdbcType=VARCHAR}
+					</if>
+					<if test="level != null and level != ''">
+						and level >= #{level,jdbcType=VARCHAR}
+					</if>
+					<if test="type != null and type != ''">
+						and type >= #{type,jdbcType=VARCHAR}
+					</if>
+			</trim>
+			order by name
+		<include refid="ORACLE.paginationEnd" />
+   	</select>
+
+	<select id="deleteById" resultType="java.lang.Integer">
+		DELETE T_TEACHER where id = #{id,jdbcType=DECIMAL}
+	</select>
+	
+	<select id="getProductByCityIds" resultMap="resultMap">
+		select 
+		<include refid="select_columns"/>
+		FROM T_TEACHER
+		<trim prefix="WHERE" prefixOverrides="AND">
+			<if test="deptCityId != null and deptCityId != '' ">
+				AND DEPT_CITY_ID = #{deptCityId}
+			</if>
+			<if test="arrvCityId != null and arrvCityId != '' ">
+				AND ARRV_CITY_ID = #{arrvCityId}
+			</if>
+		</trim>
+	</select>
+	
+	<insert id="insert">
+		insert into T_TEACHER (
+			<include refid="insert_columns"/>
+		)
+		values 
+		(
+		   #{name,jdbcType=VARCHAR},
+		   #{birthday,jdbcType=TIMESTAMP},
+		   #{type,jdbcType=VARCHAR},
+		   #{sex,jdbcType=VARCHAR},
+		   #{code,jdbcType=VARCHAR},
+		   #{major.id,jdbcType=DECIMAL},
+		   #{level,jdbcType=VARCHAR},
+		   #{headMaster,jdbcType=VARCHAR},
+		   #{createTime,jdbcType=TIMESTAMP},
+		   #{updateTime,jdbcType=TIMESTAMP}
+		 )
+	</insert>
+</mapper>

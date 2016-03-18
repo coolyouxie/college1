@@ -1,0 +1,163 @@
+body{ margin: 20px 15px 0 15px; font-family: "微软雅黑"; font-size: 12px;
+	position: relative; z-index: 2;}
+a{ color: #fff; text-decoration: none;
+	tap-highlight-color: rgba(0,0,0,0); 
+	focus-ring-color: rgba(0, 0, 0, 0); 
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+	-webkit-focus-ring-color: rgba(0, 0, 0, 0);}
+
+.baodan .baodaninfo form{ overflow: hidden;}
+.baodan .baodaninfo .column{ width: 25%; float: left; overflow: hidden; margin-bottom: 15px;}
+.baodan .baodaninfo .timecolumn{ width: 50%; float: left; overflow: hidden; margin-bottom: 15px;}
+.baodan .baodaninfo .keyname{ display: block; width: 30%; float: left; text-align: right; line-height: 26px;}
+.baodan .baodaninfo .column input{ width: 60%; height: 22px;}
+.baodan .baodaninfo .column select{ width: 61.5%; height: 28px;}
+.baodan .baodaninfo .timecolumn input{ width: 78%; height: 22px;}
+.baodan .baodaninfo .timecolumn .timeinput{ float: left; position: relative; z-index: 1; width: 28%;}
+.baodan .baodaninfo .timecolumn .timeinput span{ padding: 0 1%;}
+.baodan .baodaninfo .timecolumn .chaxun{ float: left;}
+.baodan .baodaninfo .timecolumn .keyname{ width: 15%;}
+.baodan .baodaninfo .timecolumn .chaxun{ color: #fff; background-color: #009dd9; width: 15%; margin-left: 10%; height: 27px;
+	line-height: 27px; float: left; display: block; text-align: center;}
+
+#toubao_start{ position: absolute; left: 65%; top: 5px;}
+#toubao_end{ position: absolute; left: 64.5%; top: 5px;}
+#shengxiao_start{ position: absolute; left: 65%; top: 5px;}
+#shengxiao_end{ position: absolute; left: 64.5%; top: 5px;}
+
+.baodan .baodan_list .change{ margin: 15px 0; overflow: hidden; text-align: center;}
+.baodan .baodan_list .change .daochuE{ border: 1px solid #009dd9; color: #009dd9; float: left; 
+	margin-right:10px;height: 28px;line-height: 28px; width: 82px;}
+.baodan .baodan_list .change .rengongtb{ color: #fff; background-color: #009dd9; float: left; 
+	height: 28px; line-height: 28px; width: 82px;}
+.baodan .baodan_list .list table{ border-collapse:collapse; border-spacing:0; width: 100%;}
+.baodan .baodan_list .list table thead .thead_1{ width: 8%;}
+.baodan .baodan_list .list table thead .thead_2{ width: 10%;}
+.baodan .baodan_list .list table thead .thead_3{ width: 11%;}
+.baodan .baodan_list .list table thead .thead_4{ width: 11%;}
+.baodan .baodan_list .list table thead .thead_5{ width: 7%;}
+.baodan .baodan_list .list table thead .thead_6{ width: 7%;}
+.baodan .baodan_list .list table thead .thead_7{ width: 13%;}
+.baodan .baodan_list .list table thead .thead_8{ width: 8%;}
+.baodan .baodan_list .list table thead .thead_9{ width: 8%;}
+.baodan .baodan_list .list table thead .thead_10{ width: 7%;}
+.baodan .baodan_list .list table thead .thead_11{ width: 10%;}
+.baodan .baodan_list .list table thead td{ height: 32px; text-align: center;}
+.baodan .baodan_list .list table tbody td{ height: 40px; text-align: center;}
+.baodan .baodan_list .list table thead tr{ border: 1px solid #ccccff;}
+.baodan .baodan_list .list table thead{ color: #fff; background-color: #7bb7f2;}
+.baodan .baodan_list .list table tbody td{ border: 1px solid #ccccff;}
+.baodan .baodan_list .list table tbody td .rizhi,.feibao,.chakan{ color: #3333ff; padding: 0 2px;}
+
+/*弹框*/
+.tankuang{ position: fixed; left: 0; top: 0; background-color: rgba(0,0,0,0.5);
+	z-index: 100; width: 100%; height: 100%; display: none; }
+.tankuang .toubaorizhi{ width: 586px;  display: none; position: absolute;
+	left: 25%; top: 30%; overflow: hidden;}
+.tankuang .title{ padding: 5px 5px 5px 10px; color: #fff;
+	background-color: #7bb7f2; text-align: left;}
+.tankuang .title span{ font-weight: bold; float: right; font-size: 14px; color: #fff;}
+.tankuang .toubaorizhi .message{ padding: 8px 1% 20px 1%; background-color: #f2f2f2; text-align: center;}
+.tankuang .toubaorizhi .message .message_title{ border-bottom: 1px solid #dbdbdb; overflow: hidden;
+	padding: 8px 0;}
+.tankuang .toubaorizhi .message .title1{ width: 36%; float: left;}
+.tankuang .toubaorizhi .message .title2{ width: 26%; float: left;}
+.tankuang .toubaorizhi .message .message_content{ padding: 15px 0;}
+.tankuang .toubaorizhi .message .close{ color: #fff; width: 62px; height: 25px;
+	background-color: #009dd9; margin-top: 10px; display: inline-block; line-height: 25px; zoom:1; *display: inline;}
+
+.tankuang .reminder{ width: 410px; display: none; position: absolute;
+	left: 25%; top: 30%; overflow: hidden;}
+.tankuang .reminder .message_r{ padding: 15px 0; text-align: center; background-color: #f2f2f2;}
+.tankuang .reminder .message_r .danhao{ color: #009dd9; padding: 0 5px;}
+.tankuang .reminder .button span{color: #fff; width: 62px; height: 25px;
+	background-color: #009dd9; display: inline-block; line-height: 25px; zoom:1; *display: inline;}
+.tankuang .reminder .button{ margin-top: 15px;}	
+.tankuang .reminder .button .sure{ margin-right: 15px;}
+
+.tankuang .baodandetail{ width: 528px; display: none; position: absolute;
+	left: 25%; top: 30%; overflow: hidden;}
+.tankuang .baodandetail .message_detail{ padding: 5px 8px; background-color: #f2f2f2;
+	overflow: hidden; text-align: center;}
+.tankuang .baodandetail .message_detail fieldset{ border: 2px dotted #dbdbdb; text-align: left;
+	margin: 2px 0 10px;}
+.tankuang .baodandetail .message_detail .dingdan_detail{ overflow: hidden;}
+.tankuang .baodandetail .message_detail .column{ width: 50%; float: left; overflow: hidden;
+	line-height: 25px;}
+.tankuang .baodandetail .message_detail .keyname{ width: 37%; text-align: right; display: block;
+	float: left; line-height: 25px;}
+.tankuang .baodandetail .message_detail .close{ color: #fff; width: 62px; height: 25px;
+	background-color: #009dd9; margin-top: 10px; display: inline-block; line-height: 25px; zoom:1; *display: inline;}
+
+
+.tankuang .modify_info{ width: 520px; display: none; position: absolute;
+	left: 25%; top: 30%; overflow: hidden;}
+.tankuang .modify_info .message_r{ padding: 15px 2%; text-align: center; background-color: #f2f2f2;}
+.tankuang .modify_info .button span{color: #fff; width: 62px; height: 25px;
+	background-color: #009dd9; display: inline-block; line-height: 25px; zoom:1; *display: inline;}
+.tankuang .modify_info .button{ margin-top: 15px;}	
+.tankuang .modify_info .button .sure{ margin-right: 15px;}
+.tankuang .cp_width{ width: 50%; float: left; text-align: right; color: #333;}
+.tankuang .cp_width input{ width: 60%;}
+.tankuang .cp_width2{ text-align: right; width: 100%; float: left; margin: 8px 0;
+	color: #333;}
+.tankuang .cp_width2 textarea{ text-align: left; height: 50px; width: 78.5%; padding: 0 1%;}
+
+
+/*人工投保*/
+.rengongtb .rg_border{ padding: 5px; border: 1px solid #eeeeee; height: 88px; margin-bottom: 20px;}
+.rengongtb .rg_border .title{ color: #999999; padding:4px 4px; border-bottom: 1px solid #dbdbdb;}
+.rengongtb .rg_border .content{ margin: 10px 0; position: relative; z-index: 1;}
+#shengxiaoSJ{ position: absolute; left: 22%; top: 5px;}
+#jiesuSJ{ position: absolute; left: 47%; top: 5px;}
+.rengongtb .rg_border .content .width{ width: 25%; text-align: right; float: left; margin-bottom: 10px;}
+.rengongtb select{ width: 65%; height: 26px;}
+.rengongtb input{ width: 65%; height: 20px;}
+.rengongtb .rg_height{ height: 118px;}
+.rengongtb .rg_bold{ font-weight: bold;}
+.rengongtb .rg_button{ text-align: center;}
+.rengongtb .rg_button .rg_back{ color: #fff; width: 75px; height: 25px; margin-right: 5px;
+	background-color: #666666; display: inline-block; line-height: 25px; zoom:1; *display: inline;}
+.rengongtb .rg_button .rg_submit{ color: #fff; width: 75px; height: 25px;
+	background-color: #009dd9; display: inline-block; line-height: 25px; zoom:1; *display: inline;}
+
+/*保险产品列表*/
+.baoxianCPlist .seach_info{ background-color: #f6f6f6; padding: 16px 22px; overflow: hidden;}
+.baoxianCPlist .bxCPl_width{ width: 25%; float: left;}
+.baoxianCPlist .bxCPl_width2{ width: 50%; float: left; position: relative; z-index: 1; overflow: hidden;}
+#bx-modify-start{ position: absolute; left: 65%; top: 5px;}
+#bx-modify-end{ position: absolute; left: 65%; top: 5px;}
+.baoxianCPlist .chanpinlist{ margin-top: 15px;}
+.baoxianCPlist .bxCPl_width select{ width: 63%; height: 26px;}
+.baoxianCPlist .bxCPl_width input{ width: 63%; height: 20px;}
+.baoxianCPlist .bxCPl_width2 input{ width: 80%; height: 20px;}
+.baoxianCPlist .bxCPl_width2 span{ padding: 0 4px;}
+.baoxianCPlist .bxCPl_width2 .seach{ float: right; width: 75px; height: 25px; 
+	background-color: #009dd9; color: #fff; text-align: center; line-height: 25px;
+	margin-right: 10%;}
+
+.baoxianCPlist .chanpinlist table{ border-collapse:collapse; border-spacing:0; width: 100%;
+	text-align: center;}
+.baoxianCPlist .chanpinlist table thead{ color: #fff; background-color: #7bb7f2;}
+.baoxianCPlist .chanpinlist table thead tr td{ width: 25%; height: 26px;}
+.baodan .baodan_list .list table thead tr{ border: 1px solid #ccccff;}
+.baoxianCPlist .chanpinlist table tbody tr td{ border: 1px solid #ccccff; height: 30px;}
+.baoxianCPlist .chanpinlist table tbody tr td .rizhi,.modify,.delete{ color: #3333ff; padding: 0 2px;}
+.baoxianCPlist .position{ position: relative; z-index: 1; display: inline-block; width: 29%; zoom:1; *display: inline;}
+
+/*保单详情*/
+.baodan_detail{ width: 840px; background-color: #f9fafb;}
+.baodan_detail .dingdan_detail{ border: 1px solid #ccccff; overflow: hidden;
+	padding: 0 0.5% 15px;}
+.baodan_detail .dingdan_detail .title{ padding: 4px 10px 0;}
+.baodan_detail .col_1{ width: 28%; float: left; padding-left: 5%;}
+.baodan_detail .col_1 div,.baodan_detail .col_2 div{ margin-top: 15px;}
+
+.baodan_detail .toubao_detail{ border: 1px solid #ccccff; overflow: hidden;
+	padding: 0 0.5% 15px;}
+.baodan_detail .toubao_detail .title{ padding: 12px 10px 0;}
+.baodan_detail .close{ float: right; width: 60px; height: 27px; line-height: 27px;
+	background-color: #009dd9; text-align: center; color: #fff; margin-top: 8px;}
+
+/*日期css*/
+/*#datepicker{ position: absolute; z-index: 20;}*/

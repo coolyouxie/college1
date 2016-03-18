@@ -1,0 +1,134 @@
+/*入库-office弹框*/
+.office{ font-family: "微软雅黑"; font-size: 12px;position: fixed;top: 50%;left: 50%;margin: -141px 0 0 -201px;}
+.office{ width: 400px; background-color: #fff; display: none;}
+.office .o_title{ padding:0 10px; background-color: #009dda; color: #b0dcff;
+	height: 32px; line-height: 32px; overflow: hidden;}
+.office .o_title span{ float: right; font-size: 16px; color: #fff;}	
+.office .o_content{ padding: 10px 30px; overflow: hidden; text-align: center;}
+.office .o_content .ticket_num{ float: left;}
+.office .o_content .ticket_num input{ width: 140px; height: 20px; font-weight: bold;}
+.office .o_content .ticket_num .t_begin{ margin-bottom: 10px;}
+.office .o_content .o_totle{ float: left; height: 62px; line-height: 60px; margin-left: 25px;}
+.office .o_content .o_totle span{ color: red;}
+.office .checked{ margin: 0 20px; border: 1px dotted #cccccc; overflow: hidden;}
+.office .checked .o_check{ line-height: 24px;}
+.office .checked .c_list{ float: left; width: 24.5%; margin-left: 0.5%}
+.office .o_remark{ padding: 10px 20px;}
+.office .o_remark span{ display: inline-block; width: 11%; zoom:1; *display: inline;}
+.office .o_remark textarea{ height: 40px; display: inline-block; vertical-align: middle; width: 87%; zoom:1; *display: inline;}
+.o_submit{ background-color: #f6f6f6; text-align: center; height: 60px; line-height: 60px;}
+.o_submit span{ background-color: #009dda; color: #fff; margin-right: 10px;
+	padding:3px 15px;}
+	
+/*支付退款-弹框*/	
+.pay{ font-family: "微软雅黑"; font-size: 12px;position: fixed;top: 50%;left: 50%;margin: -141px 0 0 -201px;}
+.pay{ width: 900px; background-color: #fff; display: none;}
+.pay .o_title{ padding:0 10px; background-color: #009dda; color: #b0dcff;
+	height: 32px; line-height: 32px; overflow: hidden;}
+.pay .o_title span{ float: right; font-size: 16px; color: #fff;}	
+.pay .o_content{ padding: 10px 30px; overflow: hidden; text-align: center;}
+.pay .o_content .ticket_num{ float: left;}
+.pay .o_content .ticket_num input{ width: 140px; height: 20px; font-weight: bold;}
+.pay .o_content .ticket_num .t_begin{ margin-bottom: 10px;}
+.pay .o_content .o_totle{ float: left; height: 62px; line-height: 60px; margin-left: 25px;}
+.pay .o_content .o_totle span{ color: red;}
+.pay .checked{ margin: 0 20px; border: 1px dotted #cccccc; overflow: hidden;}
+.pay .checked .o_check{ line-height: 24px;}
+.pay .checked .c_list{ float: left; width: 24.5%; margin-left: 0.5%}
+.pay .o_remark{ padding: 10px 20px;}
+.pay .o_remark span{ display: inline-block; width: 11%; zoom:1; *display: inline;}
+.pay .o_remark textarea{ height: 40px; display: inline-block; vertical-align: middle; width: 87%; zoom:1; *display: inline;}
+.o_submit{ background-color: #f6f6f6; text-align: center; height: 60px; line-height: 60px;}
+.o_submit span{ background-color: #009dda; color: #fff; margin-right: 10px;
+	padding:3px 15px;}
+		
+/*支付退款-弹框*/	
+.sales{ font-family: "微软雅黑"; font-size: 12px;position: fixed;top: 50%;left: 50%;margin: -141px 0 0 -201px;}
+.sales{ width: 900px; background-color: #fff; display: none;}
+.sales .o_title{ padding:0 10px; background-color: #009dda; color: #b0dcff;
+	height: 32px; line-height: 32px; overflow: hidden;}
+.sales .o_title span{ float: right; font-size: 16px; color: #fff;}	
+.sales .o_content{ padding: 10px 30px; overflow: hidden; text-align: center;}
+.sales .o_content .sales_Info
+.o_submit{ background-color: #f6f6f6; text-align: center; height: 60px; line-height: 60px;}
+.o_submit span{ background-color: #009dda; color: #fff; margin-right: 10px;
+	padding:3px 15px;}
+		
+		
+
+
+/*日期-价格弹框*/
+.date_bground{ background-color: rgba(0,0,0,0.5); width: 100%; height: 100%; 
+  position: absolute; top: 0; z-index: 40; display: none; left: 0; bottom: 0; right: 0;}
+.date_tankuang{ width: 586px; height: 398px; border: 10px solid #bdbdbd; padding:0 0 0 8px;
+	position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: 50; background-color: #fff;
+	margin: auto; font-family: "微软雅黑";}
+.month_show{ float: right; width: 80px; height: 100%; position: relative;}
+.month_show .date_close{ position: absolute; top: 6px; right: 8px; color: #666666; font-size: 18px;}
+.date_show{ width: 504px;}
+.date_dom span{ display: inline-block; width: 72px; text-align: center; 
+	height: 24px; background-color: #e6e6e6; text-align: center; line-height: 24px;}
+.month_show .month_dom_add{ margin-top: 120px; text-align: center;}
+.month_show .month_dom_add .plus span{ width: 32px; height: 32px; display: inline-block;background-image: url(../images/down2.png); background-size: cover;}
+.date_show .date_title{ font-weight: bold; margin: 15px 0;}
+.month_show .year{ color: #b4b4b4;}
+.month_show .yue{ font-size: 24px;}
+.month_show .month_dom_reduce{ margin-top: 76px; text-align: center;}
+.month_show .month_dom_reduce .minus span{ width: 32px; height: 32px; 
+	display: inline-block; background-image: url(../images/up2.png); background-size: cover;}
+.month_show .yue{ color: #b4b4b4; color: #666666; font-weight: bold;}
+.date_show .datelist{ height: 300px; overflow: hidden; position: relative;}
+.date_show .datelist .date_k{ width: 70px; height:48px; float: left;
+	border:1px solid #e4e4e4;}
+.date_show .datelist .date_k .date_num{ text-align: right; font-size: 12px;}
+.date_show .datelist .date_k .date_price{ text-align: center; font-size: 22px;}
+.date_show .datelist .date_k .date_price i{ font-style: normal; font-size: 14px;}
+.date_show .datelist .date_1{ height: 300px; position: absolute; top: 0; left: 0;}
+.info{ height: 22px; color: #999999; line-height: 22px; font-size: 12px;}
+.active{ background-color: #6eaff0; color: #fff;}
+.hover{ background-color: #92bbf0; color: #fff;}
+
+/*小的弹框*/
+table{ border-collapse:collapse;border-spacing:0;}
+.area_model{ font-size: 12px; position: absolute; left: 70px; top:40px; z-index: 20;
+	background-color: #fff; width: 426px; display: none; text-align: center;}
+.area_model table thead{ background-color: #f9f9f9; font-weight: bold;}
+.area_model table tr td{ text-align: center; border: 1px solid #e6e6e6; }
+
+.endorse_detail{ font-size: 12px; display: none; position: absolute; left: 0; top:40px; z-index: 40;
+	background-color: #fff; width: 280px;}
+.endorse_detail table{ line-height: normal;}	
+.t_content .content .endorse_detail table tr td{ border-bottom: 1px dotted #e6e6e6; padding: 5px 5px;
+	line-height: 20px;}
+.endorse_detail_list{ font-size: 12px; display: none; position: absolute; left: 100; top:40px; z-index: 40;
+	background-color: #fff; width: 400px;} 
+.endorse_detail_list table{ line-height: normal;}	
+.endorse_detail_list table tr td{ border-bottom: 1px dotted #e6e6ff; padding: 5px 5px;
+	line-height: 20px;}
+.endorse_detail .tk_ground{ text-align: right; background-color: #f1f1f1;}
+.align_left{ text-align: left;}
+.align_right{ text-align: right;}
+
+
+
+.tk_backto{ font-size: 12px; display: none; position: absolute; left: 0; top:40px; z-index: 60;
+	background-color: #fff; width: 362px;}
+.tk_backto table{ line-height: normal;}
+.t_content .content .tk_backto table tr td{ border-bottom: 1px dotted #e6e6e6; padding:5px;
+	line-height: 20px;}
+
+.tk_backto .tk_ground{ text-align: right; background-color: #f1f1f1;}
+.tk_backto .backto_w1{ text-align: center;}
+
+
+
+.allow_endorse{ font-size: 12px; display: none; position: absolute; left: 0px; top:40px; z-index: 80;
+	background-color: #fff; width: 390px;}
+.allow_endorse table tr td .tk_ground{ text-align: right; background-color: #f1f1f1; float: left;
+	padding: 0 5px;}
+.t_content .content .allow_endorse table tr td{ padding:5px; line-height: 20px;}
+.t_content .content .allow_endorse .tk_dotten{ border-bottom: 1px dotted #e6e6e6;}
+.allow_endorse .cr_ticket{ width: 20px; text-align: center; float: left; height: 40px; padding: 12px 4px;}
+.allow_endorse .tk_price div{ line-height: 32px; text-align: center;}
+.airmsg03 ul li .allow_endorse span{ display: inline;}  
+.allow_endorse .tk_term td{ height: 32px;}

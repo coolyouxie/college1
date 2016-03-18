@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="lazyLoadingEnabled" value="false"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias alias="demo" type="com.study.college.dto.human.Teacher"/>
+    </typeAliases>
+    
+    <plugins>
+        <plugin interceptor="com.study.college.utils.mybatis.interceptor.FkIdsInterceptor"/>
+    </plugins> 
+    
+    <mappers>
+        <mapper resource="OraclePagination.xml" />
+    </mappers>
+</configuration>

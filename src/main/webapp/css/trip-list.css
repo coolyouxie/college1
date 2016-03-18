@@ -1,0 +1,91 @@
+*{ margin: 0; padding: 0;}
+html,body{ font-family: " simsun", "microsoft yahei", "Arial"; font-size: 12px; /*min-width: 1024px;*/ color: #333;}
+ul,li{ list-style: none;}
+table,tr,th,td{ border-collapse: collapse;}
+th{ font-weight: normal;}
+.cl{ clear: both;}
+a{ text-decoration: none;}
+input{  vertical-align: middle;}
+.breadnav span{ color: #009dda; }
+.content{ width: 98%; padding:1%; line-height: 30px;}
+.content1 .cheak{ background-color: #f6f6f6; border: 1px solid #eee; padding: 10px 0;}
+.content1 .cheak .part1{ width: 100%; margin-bottom: 10px;}
+.content1 .cheak .part select{ color: #333; width: 10%;}
+.content1 .cheak .part span{ width: 8%; text-align: right; display: inline-block;}
+.content1 .cheak .part input{ width: 10%; height: 20px;}
+.content1 .cheak .part .click{ float: right; display: inline-block; margin-left: 10px;}
+.content1 .cheak .part .click a .button{ width: 100px; height: 30px; background-color: #009dda; text-align: center; 
+	color: #fff; line-height: 30px; float: left; margin-right: 10px;}
+.content1 .list table{ width: 100%; margin: 20px 0; text-align: center;}	
+.content1 .list table tr{ border-top: 1px dashed #d0d0d0;}
+.content1 .list table tr.border{ border: 1px solid #d0d0d0;}
+.content1 .list table tr input{ margin-right: 10px;}
+.content1 .list table tr input.teshu{ margin-right: 0; margin-left: 17px;}
+.content1 .list table tr span{ color: #00f;}
+.content1 .list table tr a{ color: #009dda;}
+.content1 .turnpage{ margin: 20px auto; line-height: 0;} 
+.content1 .turnpage table { margin: 0 auto; text-align: center;} 
+.content1 .turnpage table tr td{ border: 1px solid #d0d0d0; width: 16px;} 
+.content1 .turnpage table tr .pageup{ width: 51px;} 
+.content1 .turnpage table tr .page{ width: 19px;} 
+.content1 .turnpage table tr .pagedown{ width: 51px;} 
+.content1 .turnpage table tr .nowpagecount{ border: 0; letter-spacing: 2px; width: 62px; color: #999;} 
+.content1 .turnpage table tr .pageto{ width: 76px; border: 0; letter-spacing: 2px; color: #999;} 
+.content1 .turnpage table tr .pageto input{ width: 28px;} 
+.content1 .turnpage table tr .pageskip{ border: 1px solid #d0d0d0; width: 40px;} 
+
+
+
+.content2 input{ height: 20px;}
+.content2 .title{ width: 80%; background-color: #f6f6f6; border: 1px solid #eee; overflow: hidden; padding: 5px 10%;}
+.content2 .title p{ float: left;}
+.content2 .title a{ float: left;}
+.content2 .title span{ float: left; margin: 0 5px;}
+.content2 .title input{ width: 9%; float: left; padding-top: 6px;}
+.content2 .title .button{ width: 60px; height: 25px; text-align: center; line-height: 25px; 
+		color: #fff; margin-left: 10px; margin-top: 4px;}
+.content2 .title .button1{ background-color: #999;}
+.content2 .title .button2{ background-color: #009dda;}
+.content2 .title .number{ margin: 0 10px;}
+.content2 .title .number span{ color: red;}
+.content2 .title .set-up{ text-decoration: underline; color: #009dda;}
+.content2 .click{ margin: 20px 0; overflow: hidden;}
+.content2 .click .btn{ float: left; width: 80px; height: 23px; text-align: center; line-height: 23px; margin-right: 10px;}
+.content2 .click .btn1,.content2 .btn2{ border: 1px solid #009dda; color: #009dda;}
+.content2 .click .btn3{ background-color: #009dda; color: #fff; height: 25px; line-height: 25px;}
+.content2 .main{ overflow: hidden; width: 100%;}
+.content2 .main .list{ float: left; width: 23%; padding-right: 1%;}
+.content2 .main .list table{ width: 100%; text-align: center;}
+.content2 .main .list table tr td input{ margin-right: 13px;}
+.content2 .main .list table tr{ border-bottom: 1px dashed #dbdbdb;}
+.content2 .main .list table .border{ border: 1px solid #d0d0d0;}
+.content2 .main .odd-number{ float: left; width: 9%; padding-right: 1%;}
+.content2 .main .odd-number table{ background-color: #f6f6f6; border: 1px solid #eee; text-align: center; width: 100%;}
+.content2 .main .odd-number table tr{ border-bottom: 1px solid #eee;}
+.content2 .main .detail{ float: left; width: 66%;}
+.content2 .main .detail .choose .print{ width: 80px; height: 25px; background-color: #009dda; 
+		color: #fff; line-height: 25px; text-align: center;}
+.content2 .main .detail .choose input{ margin-right: 10px; width: 28%;}
+.content2 .main .detail .choose a{ display: inline-block;}
+.content2 .main .detail .result{ border: 1px solid #babbbf; width: 99%; margin-top: 5px;}
+.content2 .main .detail .result table{ width: 100%; text-align: center; }
+.content2 .main .detail .result table tr th,.content2 .main .detail .result table tr td{ border: 1px solid #eaeaea;}
+.content2 .main .detail .result table input{ width: 75%;}
+.content2 .main .detail span{ margin-left: 5px;}
+.content2 .main .detail .result .module{ padding: 5px 0; border-bottom:  1px solid #babbbf; line-height: 28px; width: 100%;}
+.content2 .main .detail .result .m1 input{ width: 20%;}
+.content2 .main .detail .result .m2{ padding: 0;}
+.content2 .main .detail .result .m3 input{ width: 7%;}
+.content2 .main .detail .result .m4 input{ width: 10%;}
+.content2 .main .detail .result .m5 input{ width: 18%;}
+
+.content .turnpage{ margin: 20px auto; text-align: center; line-height: 20px;} 
+.content2 .turnpage{ text-align: left; } 
+.content .turnpage span{ border: 1px solid #d0d0d0; width: 16px; display: inline-block; text-align: center;} 
+.content .turnpage .pageup{ width: 51px;} 
+.content .turnpage .page{ width: 19px;} 
+.content .turnpage .pagedown{ width: 51px;} 
+.content .turnpage .nowpagecount{ border: 0; letter-spacing: 2px; width: 62px; color: #999;} 
+.content .turnpage .pageto{ width: 76px; border: 0; letter-spacing: 2px; color: #999;} 
+.content .turnpage .pageto input{ width: 28px;} 
+.content .turnpage .pageskip{ border: 1px solid #d0d0d0; width: 38px; height: 21px; line-height: 21px;}

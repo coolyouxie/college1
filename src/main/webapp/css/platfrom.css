@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/*全局css*/
+*{
+	color: #333333;
+}
+a{ color:#21A8DC; text-decoration: none;}
+a:hover{color:#21A8DC; text-decoration:none;}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,tr,td {margin:0;padding:0; font-size:12px;} 
+table {border-collapse:collapse;border-spacing:0;} 
+fieldset,img {border:0} 
+address,caption,cite,code,dfn,em,strong,th,var,i {font-style:normal;font-weight:normal} 
+ol,ul {list-style:none} 
+caption,th,td{text-align:center} 
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal} 
+q:before,q:after {content:''} 
+abbr,acronym { border:0}
+.bordernone{ border:none; cursor:pointer;}
+
+/*边距*/
+.m10{margin:10px}
+.m15{margin:15px}
+.mt5{margin-top:5px}
+.mt10{margin-top:10px}
+.ml2{ margin-left:2%;}
+.ml1{ margin-left:1%;}
+.ml3{ margin-left:3px;}
+.ml10{ margin-left:10px;}
+.ml35{ margin-left:35px;}
+.mr3{ margin-right:3px;}
+.mr10{ margin-right:10px;}
+.pt20{ padding-top:20px;}
+
+/*定位*/
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{ text-align:right;}
+.fl{float:left;}
+.fr{float:right;}
+.cb{clear:both}
+
+/*字号*/
+.f12{font-size:12px}
+.f13{font-size:13px}
+.f14{font-size:14px}
+.f16{font-size:16px}
+.f18{font-size:18px}
+.f24{font-size:24px}
+.fb{font-weight:bold}
+
+/*字体颜色*/
+.blue{ color:#0199CB}
+.orange{ color:#FF8500}
+.gray{ color:#CCC}
+.gray02{ color:#999999 }
+.red{ color:#F00;}
+
+/*背景颜色*/
+.graybg{ background:#F1F1F1;}
+.graybg02{ background:#F6F6F6;}
+.bor_orange{ border:1px solid #FF8500}
+
+/* 按钮样式 */
+.graybut a{text-align:center; width:100px; height:30px; line-height:30px; display:inline-block; background:#D7D7D7; color:#323337; text-decoration:none;}
+.graybut a:hover{text-align:center; background:#BCBCBC; text-decoration:none;}
+
+.bluebut a{text-align:center; width:100px; height:30px; line-height:30px; display:inline-block; background:#009DDA; color:#FFF; text-decoration:none;}
+.bluebut a:hover{text-align:center; background:#009DDA; text-decoration:none;}
+
+.pinkbut a{text-align:center; width:80px; height:26px; line-height:26px; display:inline-block; background:#FF4499; color:#FFF; text-decoration:none; border-radius:2px;}
+.pinkbut a:hover{text-align:center; background:#FF4499; text-decoration:none;}
+
+.search_a{text-align:center; width:80px; height:26px; line-height:26px; display:inline-block; background:#009DDA; color:#FFF; text-decoration:none; border-radius:2px;}
+
+.bluebut02 a{ padding:0 16px; text-align:center; height:26px; line-height:26px; display:inline-block; background:#009DDA; color:#FFF; text-decoration:none;}
+.bluebut02 a:hover{text-align:center; background:#009DDA; text-decoration:none;}
+
+.orangebut button{ border:0;}
+.orangebut a{ padding:0 16px; text-align:center; height:26px; line-height:26px; display:inline-block; background:#FF7F2A; color:#FFF; text-decoration:none;}
+.orangebut a:hover{text-align:center; background:#FF8500; text-decoration:none;}
+
+/******平台建站******/
+.per28{ width:28%;}
+.per40{ width:40%;}
+.per58{ width:58%;}
+.per70{ width:70%;}
+
+/*.build-wrap{ width:100%; min-width:1024px; overflow:hidden; margin:0 auto;}*/
+.build-wrap,.publicbox{ width:1024px; overflow:hidden; margin:0 auto;}
+.build-wrap h1{ height:32px; border-left:1px solid #21A8DC; border-right:0;}
+.build-wrap h1 a{ float:left; display:block; height:30px; line-height:30px; text-align:center; padding:0 18px; border:1px solid #21A8DC;border-left:0;}
+.build-wrap h1 a:hover{ display:block; background:#21A8DC; color:#FFF;}
+.content01{ width:100%; overflow:hidden; }
+.content01 h2{ padding-left:15px; height:34px; line-height:34px; background:#009DDA; color:#FFF; }
+.content01 .hyidentify{ padding-left:15px; height:34px; line-height:34px; background:#009DDA; color:#FFF; }
+.content01 .hyidentify .hyinput{ float: right; margin-right: 80px;}
+.content01 .hyidentify .hyinput input{ padding: 0 5px;}
+.content01 .hyidentify .hyinput input:nth-of-type(2){ width: 90px; height: 21px; line-height: 21px;} 
+.content01 .hyidentify .hyinput input:nth-of-type(3){ width: 166px; height: 21px; line-height: 21px;}
+.content01 .hyidentify .hyinput input:nth-of-type(4){ width: 90px; height: 21px; line-height: 21px;}
+.content01 .hyidentify .hyinput input:nth-of-type(5){ width: 166px; height: 21px; line-height: 21px;}
+.content01 .hyidentify .hyinput input[type="checkbox"]{ vertical-align: middle;}
+.content01 .hyidentify .hyinput label{ margin-right: 10px;}
+.content01 ul{ padding:10px; background:#F6F6F6; }
+.content01 ul span{ margin-left:5px;}
+.content01 ul .table{ border:1px solid #F6F6F6; background:#FFF; margin-top:10px; }
+.content01 ul table td{ border:solid #F6F6F6; border-width:0 1px 1px 0; height:30px;}
+.content01 ul table td input{ width:14px; height:14px;}
+.memberidentify ul .table td{ border:solid #F6F6F6; border-width:0 1px 1px 0; height:30px;}
+.input_a{ padding:0 5px; height:28px; background:#FFF; border-left:1px solid #848484; border-top:1px solid #848484; border-right:1px solid #CCC; border-bottom:1px solid #CCC;}
+.input_d{ padding:0 5px; height:28px; border-left:1px solid #848484; border-top:1px solid #848484; border-right:1px solid #CCC; border-bottom:1px solid #CCC;background: #fff url(../images/datePicker.gif) no-repeat right;}
+.content01 ul li{ line-height:26px;}
+.content01 ul dl{ width:100%; height:34px; margin-top:10px; }
+.content01 ul dl dt{ float:left; width:24%; line-height:30px; text-align:center;}
+.content01 ul dl dd{ float:left; width:76%; line-height:30px; }
+.content01 ul dl dd span{ margin-right:10px;}
+.inputtxt{ padding:0 5px; height:24px; line-height:24px;}
+
+/******搜索结果页******/
+
+.search-nav{ width:100%; line-height:30px;}
+.startwrap{ padding:10px; overflow:hidden; border-left:1px solid #E5E5E5; border-right:1px solid #E5E5E5; border-bottom:1px solid #E5E5E5; border-top:2px solid #EF3388; background:#F7F7F7;}
+.startwrap ul.way{ width:10%; border-right:1px solid #E4E4E4;}
+.startwrap ul.way li{ margin-left:10px; line-height:30px;}
+
+.startwrap ul{ float:left; }
+.startwrap ul.city{ width:26%;}
+.startwrap ul.city dl{ width:100%; height:30px;}
+.startwrap ul.city dl dt{ float:left; width:30%; line-height:30px; text-align:center;}
+.startwrap ul.city dl dd{ float:left; width:64%; }
+.startwrap ul.city dl dd input{ padding:0 5px; line-height:22px;}
+
+.startwrap ul.change{ width:3%; padding-top:20px;}
+
+.combination{ height:30px; border-left:1px solid #CCCCCC; border-bottom:1px solid #EF3388; border-right:0; /*display:none;*/}
+.combination a{ float:left; display:block; height:30px; line-height:30px; text-align:center; padding:0 24px; border-right:1px solid #CCCCCC; border-top:1px solid #CCCCCC; color:#333;}
+.combination a:hover{ display:block; background:#F790BB; color:#FFF;}
+
+ 
+.datebox{ position:relative; width:99.8%; height:50px; border:1px solid #CCC; border-radius:2px; }
+.datebox .datecontent{ position:relative; height:50px; }
+.datebox .datecontent ul{ float:left; /*width:100px;*/ padding:2px 20px; line-height:22px; /*border-left:1px solid #E5E5E5;*/ background:#FFF2F9;}*
+.datebox .datecontent ul li{ text-align:center;}
+.datebox .datecontent ul li p i,.datebox .datecontent ul li p span{ color:#FF6600;}
+.datebox .datecontent ul li p span{ font-size:18px; font-weight:bold;}
+/*.datebox .datecontent ul.current{ position:relative; top:-1px; width:102px; border-top:2px solid #ED3386; border-left:1px solid #ED3386;border-right:1px solid #ED3386; background:#FFF;}*/
+.datebox .date-rili{ position:absolute; top:0; right:0; width:108px; height:50px; padding-right: 25px;}
+.datebox .date-rili img{ padding:5px; float:left;}
+.datebox .date-rili span{ float:left; padding:10px 0 0 2px; text-align:center; font-weight:bold; color:#676767;}
+
+/*.prev{ position:absolute; left:0; z-index:10; width:30px; height:48px; background:#FFF url(../images/order/arrow0306.png) 13px 16px no-repeat; }*/
+/*.next{ position:absolute; z-index:10; right:112px; top:2px; width:30px; height:48px; background:#FFF url(../images/order/arrow0306.png) -9px 15px no-repeat; }*/
+
+.swiper-button-prev{ right:auto; background:#FFF url(../images/arrow0306.png) 13px 16px no-repeat;}
+
+.swiper-button-next{ right:1px; left:auto; background:#FFF url(../images/arrow0306.png) -9px 15px no-repeat;}
+
+
+.t_content{ border:0; background:#FFF;}
+
+.shaixuan01,.shaixuan02{ height:26px; line-height:26px; margin-top:10px;}
+
+.shaixuan01 select{ float:left; width:80px; line-height:26px; margin-right:10px;}
+.shaixuan02 p{float:left; margin-right:5px; width:100px; height:22px; line-height:22px; text-align:center; color:#FFF; background:#F790BB;}
+.shaixuan02 p i{ margin-left:3px; color:#FFF; cursor:pointer;}
+
+.airmsg,.airmsg02,.airmsg03{ width:100%; /*overflow:hidden;*/}
+.airmsg ul{ width:100%; height:32px; line-height:32px; background:#F1F1F1;}
+.airmsg ul li,.airmsg02 ul li{ float:left; display:block;}
+.airmsg ul li.w18,.airmsg02 ul li.w18,.airmsg03 ul li.w18{ width:18%;}
+.airmsg ul li.w27,.airmsg02 ul li.w27{ width:22%;}
+.airmsg ul li.w10,.airmsg02 ul li.w10,.airmsg03 ul li.w10{ width:10.5%;}
+.airmsg ul li.w8,.airmsg02 ul li.w8,.airmsg03 ul li.w8{ width:7.5%;}
+.airmsg ul li.w6,.airmsg02 ul li.w6,.airmsg03 ul li.w6{ width:7%;}
+
+.airmsg02 ul{ height:50px; padding-top:10px; background:#FFF; border-bottom:1px solid #CCC;}
+.airmsg02 ul li{ text-align:center; line-height:30px; }
+.airmsg02 ul li span{ text-align:center; line-height:18px; }
+.airmsg02 ul li span,.airmsg02 ul li img{ float:left; }
+.airmsg02 ul li span.cangwei{ height:36px; line-height:18px; }
+
+.airmsg03 ul{ height:52px; line-height:52px; background:#FFF; border-bottom:1px dashed #CCC;}
+.airmsg03 ul li{ height:52px; line-height:52px;}
+.airmsg03 ul li span{ display:block; line-height:18px;}
+.airmsg03 ul li{ float:left;}
+.airmsg03 ul li.w16{ width:12%;}
+.airmsg03 ul li.w10{ width:10%;}
+.input_d{ padding:0 5px; height:28px; border-left:1px solid #848484; border-top:1px solid #848484; border-right:1px solid #CCC; border-bottom:1px solid #CCC;background: #fff url(../images/datePicker.gif) no-repeat right;}
+.more_e{ width:100%; height:30px; line-height:30px; text-align:right;}
+.more_e i{ padding:2px; margin-left:5px; background:url(../images/order/arrowtoggle.gif) no-repeat;}
+.more_e .up i{ background-position: 0 -20px;}
+
+.t_content .content table{ border:1px solid #CCCCCC;}
+.t_content .content table td{ border:solid #CCCCCC; border-width:0 1px 1px 0;}
+.table_jx{ position:absolute; width:490px; background:#FFF;}
+.table_jx02{ position:absolute; width:340px; background:#FFF;}
+.flystyle{ position:relative;}
+.flystyle_content{ position:absolute; z-index:999;}
+
+.bookline{ width:100%; overflow:hidden; display: none;}
+.bookline h3{ width:100%; height:26px; line-height:26px; background:#E8E8E8; }
+
+/*列表隐藏*/
+.flighttab,.combination_tab{ display: none;}
+
+/*移动、切换css*/
+.datebox .datecontent .datelist{ width: 784px; float: left; position: relative; height: 50px; overflow: hidden;}
+.datebox .datecontent .datelist ul{ list-style-type: none; overflow: hidden; margin: 0; padding: 0; position: absolute; left: 0; height: 50px;}
+.datebox .datecontent .prv{ width: 35px; height: 50px; border: 1px solid #ccc; float: left; position: relative; border-bottom: 1px solid #ED3386;
+	border-top: 0; border-left: 0; border-right: 0; outline:none; background-color: #fff;}
+.datebox .datecontent .next{ width: 35px; height: 50px; border: 1px solid #ccc; float: left; position: relative; border-bottom: 1px solid #ED3386;
+	border-left: 0;  outline:none; background-color: #fff;}
+.datebox .datecontent .datelist ul li{ float: left; height: 48px; width: 110px; border: 1px solid #ccc;
+	display: list-item; border-bottom: 1px solid #ED3386; background-color: #FFF2F9;}
+.datebox .datecontent .datelist ul .active{ border-top: 3px solid #ED3386; border-left: 1px solid #ED3386;
+	border-right: 1px solid #ED3386; border-bottom: none;}
+.datebox .datecontent .datelist ul .list_bg{ background-color: #ED3386;}
+.datebox .datecontent .datelist ul .list_bg p{ color: #fff;}
+.datebox .datecontent .datelist ul .list_bg p i{ color: #fff;}
+.datebox .datecontent .datelist ul .list_bg p span{ color: #fff;}
+.datebox .datecontent .datelist ul .li_content .click_check{ font-size:12px;color:#FF4499;}
+.datebox .datecontent .datelist ul .list_bg .click_check{ font-size:12px;color:#fff;}
+.datebox .datecontent .prv span{ width: 0; height: 0;border-top: 7px solid transparent; border-right: 9px solid #ED3386; border-bottom: 7px solid transparent; position: absolute; top: 16px; left: 12px;}
+.datebox .datecontent .next span{ width: 0; height: 0;border-top: 7px solid transparent; border-left: 9px solid #ED3386; border-bottom: 7px solid transparent; position: absolute; top: 16px; left: 12px;}
+.publicbox .flighttab{ display: none;}
+.click_check{ line-height: 48px; font-size: 14px; color: #ccc; font-weight: bold;}
+/*日期css*/
+.datechange .input_date{ position: relative; width: 169px;}
+ul dl dd .datechange .input_date{ width: 100%;}
+.datechange .calPosition{ position: absolute; right: 15px; top: 3px; display: block;}
+ul dl dd .datechange .input_date .calPosition{ right:8%; top:6px;}
+.datechange .ui-datepicker.ui-datepicker-multi{ min-width: 416px; width: 410px !important; position: absolute;
+	z-index: 111;}
+.content01 ul dl dd table tr td{ line-height: normal; width: 32px;}
+.content01 ul dl dd table tr td span{ margin-left:0;}
+
+.datechange .ui-datepicker-week-end{ color: #e78f08;}
+
+/*地址选择*/
+.startwrap ul.city dl dd input{ width: 150px;}
+/*弹框定位*/
+.return_hover{ position: relative;}
+.tankuang_hover{ position: relative;}
+.position_r{ position: relative;}
+.airmsg02 ul li .style_p{ display: block; width: 100%; margin-left: 19px; text-align: left;}
+
+/*调整*/
+.click_check{ line-height: 22px;}
+
+tap-highlight-color: rgba(0,0,0,0); 
+focus-ring-color: rgba(0, 0, 0, 0); 
+-webkit-tap-highlight-color: rgba(0,0,0,0); 
+-webkit-focus-ring-color: rgba(0, 0, 0, 0);
+
+
+
+
+
+
+

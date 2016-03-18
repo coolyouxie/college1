@@ -1,0 +1,207 @@
+*{ margin: 0; padding: 0;}
+html,body{ font-family: " simsun", "microsoft yahei", "Arial"; font-size: 12px; /*min-width: 1024px;*/ color: #333;}
+ul,li{ list-style: none;}
+table,tr,th,td{ border-collapse: collapse;}
+th{ font-weight: normal;}
+.cl{ clear: both;}
+a{ text-decoration: none;}
+.content{ width: 98%; padding:0 1%; line-height: 30px;}
+.breadnav{ line-height: 34px; padding-left: 30px; background: url(../images/icon.png) no-repeat 10px 10px;}
+
+
+/*订单管理-明细 页面*/
+.content1 .infor1{ border: 1px solid #f2f2f2; background-color: #f9fafb; margin-right: 10%;}
+.content1 .infor1 .message{ border-bottom: 1px solid #f2f2f2; overflow: hidden; width: 100%;}
+.content1 .infor1 .visitor{ border-bottom:none;}
+.content1 .infor1 .message .title{ float: left; width: 2%; background-color: #e8eef7; text-align: center; 
+		color: #666; height: 60px; line-height: 15px; }
+.content1 .infor1 .message .title1{ float: left; width: 400px; background-color: #e8eef7; text-align: center; 
+color: #666;line-height: 15px; }
+.content1 .infor1 .order .title{ padding: 50px 3px;}
+.content1 .infor1 .product .title{ padding: 5px 3px;}
+.content1 .infor1 .visitor .title{ padding: 5px 3px;}
+.content1 .infor1 .message .main{ float: left; overflow: hidden; width: 97%; padding: 5px 0;}
+.content1 .infor1 .message .main .part{ width: 100%;}
+.content1 .infor1 .message .main .part select{ color: #333; width: 10%;}
+.content1 .infor1 .message .main .part span{ width: 10%; text-align: right; display: inline-block;}
+.content1 .infor1 .message .main .part input{ width: 14%;}
+.content1 .infor1 .message .main .part input.choose{ width: 2%;}
+.content1 .infor1 .message .main .part label{ padding-right: 20px; color: #333; }
+.content1 .click{ float: right; padding: 10px 0; margin-right: 10%;}
+.content1 .button{ width: 100px; height: 30px; background-color: #009dda; text-align: center; 
+	color: #fff; line-height: 30px; float: left; margin-right: 10px;}
+.content1 table{ width: 100%;}
+.content1 table tr th,.content1 table tr td{ border: 1px solid #e4e4e4; text-align: center;} 
+.content1 table th{ background-color: #999; color: #fff;}
+.content1 table .blue{ color: #0000ff;}
+.content1 table td{ height: 30px;}
+.content1 table td.special{line-height: 15px;}
+
+
+/*订单详情 页面*/
+.content2{ line-height: 25px;}
+.content2 .breadnav span{ color: #06c; }
+.content2 .module1{  margin-right: 15%;}
+.content2 .module1 .header{ overflow: hidden; width: 100%;}
+.content2 .module1 .header>p{ float: left; margin-left: 13%;}
+.content2 .module1 .header .import{ float: right; overflow: hidden;}
+.content2 .module1 .header .import p{ float: left;}
+.content2 .module1 .header .import a{ float: left; display: inline-block;}
+.content2 .module1 .header .import p input{ height: 26px;}
+.content2 .module1 .header .import .button{ float: right; width: 88px; height: 28px; border: 1px solid #ccc; background-color: #f2f2f2; text-align: center; line-height: 28px; margin-left: 10px;}
+.content2 .module1 .main{ width: 100%; overflow: hidden; border-top: 1px solid #ccc; margin-top: 5px;}
+.content2 .module1 .main .area{ float: left; padding-top: 10px;}
+.content2 .module1 .main .left{ width: 44%;}
+.content2 .module1 .main .middle{ width: 25%;}
+.content2 .module1 .main .right{ width: 28%; margin-left: 2%;}
+.content2 .module1 .main .left span{ float: left; width: 30%; text-align: right; overflow: hidden;height: 24px;}
+.content2 .module1 .main .left p{ float: left; width: 70%; text-align: left;}
+.content2 .module1 .main p a{ margin-left: 20px; color: #0000ff;}
+.content2 .module1 .main .left .part{ overflow: hidden; border-bottom: 1px dashed #ccc; padding-bottom: 5px;}
+.content2 .module1 .main .middle .title{ margin-bottom: 5px; overflow: hidden;}
+.content2 .module1 .main .middle .title p{ float: left;}
+.content2 .module1 .main .middle .title span{ float: right; color: #0000ff;}
+.content2 .module1 .main .middle textarea{ width: 100%;}
+.content2 .module1 .main .middle input{ height: 80px;}
+.content2 .module1 .main .middle .word{ float: right;}
+.content2 .module1 .main .middle .click{ float: left; padding: 10px 0;}
+.content2 .module1 .main .middle .click .button{ width: 100px; height: 25px; background-color: #999; text-align: center; 
+	color: #fff; line-height: 25px; float: left; margin-right: 10px;}
+.content2 .module1 .main .middle .choose{ width: 100%; overflow: hidden;}
+.content2 .module1 .main .middle .choose .button{ float: left; width: 27%; margin-right: 3%; margin-bottom: 10px; height: 25px; border: 1px solid #ccc; background-color: #f2f2f2; color: #666; text-align: center; line-height: 25px;}
+.content2 .module1 .main .middle .choose .button.special{ width: 30%;}
+.content2 .module1 .main .right{ border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
+.content2 .module1 .main .right .order{ border-bottom: 1px solid #ccc; padding: 10px 0; overflow: hidden;}
+.content2 .module1 .main .right .top{ width: 100%; padding-top: 0;}
+.content2 .module1 .main .right .top div{ float: left; text-align: center;}
+.content2 .module1 .main .right .top div:first-child{ width: 30%;}
+.content2 .module1 .main .right .top div:nth-child(2){ width: 25%;}
+.content2 .module1 .main .right .top div:last-child{ width: 45%;}
+.content2 .module1 .main .right .top div .bold{ font-weight: bold;}
+.content2 .module1 .main .right .top div p.green{ color: green; font-weight: bold;}
+.content2 .module1 .main .right .top div p a{ margin-left: 0; text-decoration: underline;}
+.content2 .module1 .main .right .centre{ padding:10px; line-height: 30px;}
+.content2 .module1 .main .right h3{ font-size: 12px; padding-left: 10px;}
+.content2 .module1 .main .right .centre span{ float: left; width: 30%; text-align: right;}
+.content2 .module1 .main .right .centre p{ float: left; width: 70%; text-align: left;}
+.content2 .module1 .main .right .centre p a{ float: right; color: #0000ff; }
+.content2 .module1 .main .right .bottom{ padding:10px; width: 100%; overflow: hidden;}
+.content2 .module1 .main .right .bottom h3 span{ color: red;}
+.content2 .module1 .main .right .bottom .choose{ width: 50%; float: left;}
+.content2 .module1 .main .right .bottom .moveright{ width: 45%; padding-left: 5%;}
+.content2 .module1 .main .right .bottom .reason{ padding-left: 20px;}
+.content2 .module1 .main .remark{ width: 55%;}
+.content2 .module1 .main .remark span{ float: left; width: 25%; text-align: right;}
+.content2 .module1 .main .remark p{ float: left; width: 75%; text-align: left;}
+.content2 .module1 .main .remark .special{ color: #999;}
+.content2 .module2{ width: 80%; border: 1px dashed #009dda; padding: 5px 20px 5px 5px; margin: 10px 0;}
+.content2 .module2 .table1{ width: 95%;}
+.content2 .module2 .table1 tr th,.content2 .module2 .table1 tr td{ border: 1px solid #e4e4e4; text-align: center;} 
+.content2 .module2 .table1 th{ background-color: #999; color: #fff;}
+.content2 .module2 .table1 td{ height: 30px; line-height: 15px;}
+.content2 .module3 .hbinfor{ width: 80%;} 
+.content2 .module3 .hbinfor .title{ background: #999; padding: 0 10px; height: 30px; line-height: 30px; color: #fff; }
+.content2 .module3 .hbinfor #flightInfoTable input{ width:100px;}
+.content2 .module3 .hbinfor table{background: #f6f6f6; width: 100%; border: 1px solid #e4e4e4;} 
+.content2 .module3 .hbinfor table{ width: 100%; border: 1px solid #f0f0f0;} 
+.content2 .module3 .hbinfor table tr{height: 50px;} 
+.content2 .module3 .hbinfor table tr td{ padding: 0 15px; border: none;}
+.content2 .module3 .hbinfor table tr td.go{ padding-left: 0;}
+.content2 .module3 .hbinfor table tr td i{ font-style: normal; margin: 0 3px; color: red;} 
+.content2 .module3 .hbinfor table tr td img{ width: 18px; vertical-align: bottom; margin-right: -2px;} 
+.content2 .module3 .hbinfor table tr td .jixing{padding-left: 40px; color: #999;} 
+.content2 .module3 .hbinfor table tr td a{ text-decoration: underline; color: #009dda;} 
+.content2 .module3 .hbinfor table tr td number{ text-decoration: underline;} 
+.content2 .module3 .hbinfor table tr td .div-2{padding-left: 40px;}
+.content2 .module3 .hbinfor table tr td .name{color: #999; padding-right: 14px;} 
+.content2 .module3 .hbinfor table tr td.td-5{color: #ccc;} 
+.content2 .module3 .hbinfor table tr td.td-6{color: #ff8500;}
+.content2 .module3 .rule{ width: 80%; background-color: #f3f9ff; margin: 10px 0;}
+.content2 .module3 .rule td,.content2 .module3 .rule th{ height: 30px; line-height: 15px;}
+.content2 .module3 .rule table tr td,.content2 .module3 .rule table tr th{ border: 1px solid #d6e5f1; text-align: center;}
+.content2 .module3 .rule table tr .hebing{ padding: 0 10px;}
+.content2 .module3 .rule table tr .red{ color: red;}
+.content2 .module3 .rule table tr .tal{ text-align: left;}
+.content2 .module3 .buchong{ width: 80%; background-color: #f3f9ff; border: 1px solid #d6e5f1; line-height: 20px;}
+.content2 .module3 .buchong p{ padding-left: 5px;}
+.content2 .lot .title{  padding: 10px 0;}
+.content2 .module3 .kpinfor{ width: 100%;}
+.content2 .module3 .kpinfor .title{ width: 68%;}
+.content2 .module3 .kpinfor .title a{ float: right; color: #00f;}
+.content2 .module3 .kpinfor #orderDetails input{ width:40px;}
+.content2 .module3 .kpinfor table tr th,.content2 .module3 .kpinfor table tr td{ border: 1px solid #e4e4e4; text-align: center;}
+.content2 .module3 .kpinfor table tr th{ background-color: #999; color: #fff;}
+.content2 .module3 .bdinfor table tr th,.content2 .module3 .bdinfor table tr td{ border: 1px solid #e4e4e4; text-align: center;}
+.content2 .module3 .bdinfor table tr th{ background-color: #999; color: #fff;}
+.content2 .module3 .address{ width: 70%;}
+.content2 .module3 .address table{ width: 100%;}
+.content2 .module3 .address table tr td{ border: 1px solid #e4e4e4; text-align: center; line-height: 50px;}
+.content2 .module3 .address table tr th{ background-color: #999; color: #fff; border: 1px solid #e4e4e4; text-align: center;}
+.content2 .module3 .contacts{ margin-bottom: 10px;}
+.content2 .module3 .contacts p{ padding-left: 20px;} 
+
+
+/*申请退票 页面*/
+.content3 .flight-infor{ background-color: #f6f6f6; margin: 20px 0;}
+.content3 .title{ background-color: #009dda; color: #b0dcff; padding-left: 10px;}
+.content3 .flight-infor table{ width: 100%; border: 1px solid #e4e4e4; text-align: center;}
+.content3 .flight-infor table th{ border-bottom: 1px dashed #e4e4e4;}
+.content3 .return-infor .list{ width: 100%; overflow: hidden; border: 1px solid #e4e4e4; padding: 10px 0;}
+.content3 .return-infor .list .classify{ width: 48%; float: left; padding: 0 1%;}
+.content3 .return-infor .list .classify a{ display: inline-block;}
+.content3 .return-infor .list .classify a .button{ width: 60px; height: 26px; background-color: #009dda; 
+		color: #fff; text-align: center; line-height: 26px;}
+.content3 .return-infor .list .classify .wide{height: 22px;}
+.content3 .return-infor .list .classify span{padding-left: 20px;}
+.content3 .return-infor .explain{ padding: 10px 20px;}
+.content3 .return-infor .explain .buchong{ background-color: #f3f9ff; border: 1px solid #d6e5f1; line-height: 20px;}
+.content3 .return-infor .explain .buchong p{ padding-left: 5px;}
+.content3 .return-infor .explain .rule{ background-color: #f3f9ff; margin-top: 10px;}
+.content3 .return-infor .explain .rule td,.content3 .return-infor .explain .rule th{ height: 30px; line-height: 15px;}
+.content3 .return-infor .explain .rule table tr td,.content3 .return-infor .explain .rule table tr th{ border: 1px solid #d6e5f1; text-align: center;}
+.content3 .return-infor .explain .rule table tr .hebing{ padding: 0 10px;}
+.content3 .return-infor .explain .rule table tr .red{ color: red;}
+.content3 .return-infor .explain .rule table tr .tal{ text-align: left;}
+.content3 .remark .write{ padding: 10px; background-color: #f6f6f6; border: 1px solid #e4e4e4;}
+.content3 .remark .write textarea{ width: 100%;}
+.content3 .remark a .button{ width: 100px; height: 26px; background-color: #009dda; 
+		color: #fff; text-align: center; line-height: 26px; margin: 20px auto;}
+
+
+/*申请退票 页面*/
+.content4 .flight-infor{ background-color: #f6f6f6; margin: 20px 0; border: 1px solid #e4e4e4;}
+.content4 .title{ background-color: #009dda; color: #b0dcff; padding-left: 10px;}
+.content4 .flight-infor table{ width: 100%; text-align: center;}
+.content4 .flight-infor table th{ border-bottom: 1px dashed #e4e4e4;}
+.content4 .change-infor{ border: 1px solid #e4e4e4;}
+.content4 .change-infor table.part1{ margin: 0 20px;}
+.content4 .change-infor table.part1 tr.one{ border-bottom:1px dashed #e4e4e4;}
+.content4 .change-infor table.part1 tr.two{ height: 40px;}
+.content4 .change-infor table.part1 tr.two td input{ width: 95%; padding-left: 1%; height: 20px;}
+.content4 .change-infor table.part1 tr.two td select{ height: 24px;}
+.content4 .change-infor .detail{ background-color: #f6f6f6; margin: 0 20px 10px 20px;}
+.content4 .change-infor .detail p{ padding-left: 5px;}
+.content4 .change-infor .detail table.part2{ width: 100%; text-align: center;}
+.content4 .change-infor .detail table.part2 tr .left{ text-align: left;}
+.content4 .explain{ padding: 10px 20px;}
+.content4 .explain .buchong{ background-color: #f3f9ff; border: 1px solid #d6e5f1; line-height: 20px;}
+.content4 .explain .buchong p{ padding-left: 5px;}
+.content4 .explain .rule{ background-color: #f3f9ff; margin-top: 10px;}
+.content4 .explain .rule td,.content4 .explain .rule th{ height: 30px; line-height: 15px;}
+.content4 .explain .rule table tr td,.content4 .explain .rule table tr th{ border: 1px solid #d6e5f1; text-align: center;}
+.content4 .explain .rule table tr .hebing{ padding: 0 10px;}
+.content4 .explain .rule table tr .red{ color: red;}
+.content4 .explain .rule table tr .tal{ text-align: left;}
+.content4 .remark .write{ padding: 10px; background-color: #f6f6f6; border: 1px solid #e4e4e4;}
+.content4 .remark .write textarea{ width: 100%;}
+.content4 .remark a .button{ width: 100px; height: 26px; background-color: #009dda; 
+		color: #fff; text-align: center; line-height: 26px; margin: 20px auto;}
+
+/*日期css*/
+.datechange .input_date{ position: relative; }
+ul dl dd .datechange .input_date{ width: 100%;}
+.datechange .calPosition{ position: absolute; right: 6px; top: 3px; display: block;}
+ul dl dd .datechange .input_date .calPosition{ right:8%; top:6px;}
+.datechange .ui-datepicker.ui-datepicker-multi{ min-width: 416px; width: 410px !important; position: absolute;
+	z-index: 111;}
+.datechange .ui-datepicker-week-end{ color: #e78f08;}

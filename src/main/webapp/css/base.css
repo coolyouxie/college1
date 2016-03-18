@@ -1,0 +1,8 @@
+.dialog{ z-index: 10000; background: rgba(0,0,0,0.5);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#55000000,endColorstr=#55000000); position: fixed; left: 0;right: 0; height: 100%; top: 0; display: none;}
+.dialog .main{ width: 250px; height: 130px; background: #fff; margin: 30px auto;}
+.dialog .main .title{ position: relative;}
+.dialog .main .title .close{ position: absolute; right: 4px; top: 4px; cursor: pointer; width: 15px; }
+.dialog .main .title .title-cot{ padding: 10px; font-size: 14px;}
+.dialog .main .main-cot{ text-align: center;}
+.dialog .main .main-cot input{height: 20px;}
+.dialog .main .main-cot button{ display: block; margin-left: 42%; margin-top: 20px;}

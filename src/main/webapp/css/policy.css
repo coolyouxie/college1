@@ -1,0 +1,123 @@
+html{ font-family:"microsoft yahei", "Arial"; font-size: 12px;}
+body{padding-bottom: 200px;}
+li{ list-style: none;}
+select,input[type='text'],textarea{border: 2px solid #848484;border-bottom: 0;border-right: 0; background: #fff; vertical-align: middle;}
+.container a{ text-decoration: none; color: #21a8dc; }
+.container{ min-width: 1000px; margin: 0 auto;  border: 0px solid red;}
+.left{ float: left; width: 12%; height: 300px; border: 0px solid red; background: #f0f0f0;}
+.right{ float: right;width: 86%; height: 300px;border: 0px solid red;}
+.left .main-menu{ margin: 0; padding: 0;}
+.left .main-menu li{height: 35px; line-height: 35px; text-align: center; border-bottom: 1px solid #fff;}
+.right .top-title{ padding: 5px;}
+.right .condition{ border: 1px solid #e4e4e4; background: #f6f6f6; width: 100%; text-align: center; padding-top: 10px;}
+.right .condition td{width: 30%; height: 30px;}
+.right .condition .last-td{width: 50%;}
+.right .condition .last-td input,.right .condition .last-td select{width: 25%;}
+.right .condition tr td input,.right .condition tr td select{width: 50%;}
+.right .condition .last-td select{width: 27.5%;}
+.right .condition .td-2{ padding-left: 20px;}
+.right .condition .td-2 input{ width: 47%;}
+.right .condition .td-2 img{ vertical-align: top; width: 17px; margin-top: -1px;}
+.right .condition .last-td2 input{width: 54.5%;}
+.right .condition .last-tr td{ text-align: right; padding:10px 75px 5px 0; }
+.right .condition .last-tr input{width: auto; vertical-align: top; margin-left: 10px;}
+.right .condition .last-tr button{border: 0; width: 60px;height: 30px; background: #009dd9; color: #fff; margin-left: 15px;vertical-align: top; margin-top: -7px;}
+.right .condition .office select{ font-weight: bold;}
+.right .list{ margin-top: 20px;}
+.right .list .title{border: 0px solid red;}
+.right .list .title button{ border: 0; background: #e4e4e4; width: 12.32%;height: 35px; margin-right: 2px;}
+.right .list .title button.select{ background: #009dda;color:#fff;}
+.right .list .value{border: 1px solid #009dda; width: 99.55%; padding-bottom: 15px; margin-bottom: 30px;}
+.right .list .value .btn{ border-bottom: 1px solid #d0d0d0; padding: 5px;}
+.right .list .value .btn button{height: 25px; width: 80px; margin-right: 8px;}
+.right .list .value .btn .div1{ float: left;}
+.right .list .value .btn .div1 button{ border: 1px solid #009dda;  background: #fff; color: #009dda;}
+.right .list .value .btn .div2{ float: right;}
+.right .list .value .btn .div2 button{ border: 0; color: #fff; background: #009dda;}
+.right .list .value .btn .div2 a{ text-decoration: underline; color: #004080;}
+.right .list .value .list-tab{ width: 100%;text-align: center;}
+.right .list .value .list-tab tr:first-child td{ height:30px;  border-bottom: 1px solid #d0d0d0; padding: 0 3px; }
+.right .list .value .list-tab tr:first-child .td-2{ width: 5%; }
+.right .list .value .list-tab tr:first-child .td-3{ width: 4%; }
+.right .list .value .list-tab tr:first-child .td-4{ width: 7%; }
+.right .list .value .list-tab tr:first-child .td-4.time{ width: 2%; }
+.right .list .value .list-tab tr td{border-bottom: 1px dashed #e4e4e4;  }
+.right .list .value .list-tab tr td a{color: #004080; }
+.right .list .value .list-tab .last-tr td{ border: 0;}
+.right .list .value .page{ text-align: center; margin-top: 15px;}
+.right .list .value .page span{ border: 1px solid #d0d0d0; border-left: 0; padding: 2px; min-width: 20px; display: inline-block;}
+.right .list .value .page span.up{ border-left: 1px solid #d0d0d0;}
+.right .list .value .page span.sum{ color: #999; border: 0; margin-left: 10px;}
+.right .list .value .page span.sum input{ width:35px; margin: 0 3px; text-align: center;}
+.right .list .value .page span.sum button{ border: 1px solid #d0d0d0; background: #fff; padding: 2px 4px; margin-left: 5px;}
+.policy-bargain .right .main{ padding: 5px; border: 1px solid #e4e4e4; margin-top: 20px;}
+.policy-bargain .right .main-1{  margin-top: 0;}
+.policy-bargain .right .main .title{  border-bottom: 1px solid #e4e4e4; padding:5px 0 3px 5px; color: #999;}
+.policy-bargain .right .main .msg{ width: 100%;}
+.policy-bargain .right .main .msg td{ height: 30px; width: 25%;}
+.policy-bargain .right .main .msg tr:first-child input{ width: 68%;}
+.policy-bargain .right .main .msg tr:first-child select{ width: 70%;}
+.policy-bargain .right .main .msg tr input{ vertical-align: top; }
+.policy-bargain .right .main .msg .tr-3 select{width: 17%;}
+.policy-bargain .right .main .msg .tr-3 button{width: 50px; margin-left: 10px; height: 25px; color: #fff; border: 0; background: #009dd9;}
+.policy-bargain .right .main .msg .tr-3 span{border: 1px solid #009dd9; background: #dbf2fb;min-width: 50px;height: 23px; padding: 0 2px; margin-left: 10px; text-align: center; display: inline-block; line-height: 23px; vertical-align: top;}
+.policy-bargain .right .main .msg .tr-4 span{ color: red;}
+.policy-bargain .right .main .msg td .td-title{min-height: 25px; line-height: 25px; background: #ffffd7; border: 1px solid #e1db66; padding: 0 10px;}
+.policy-bargain .right .main .msg .tr-1 .td-title{ margin: 4px 0;}
+.policy-bargain .right .main .msg td textarea{ display: block; margin: 3px 0 0 60px; width: 84%; min-height: 50px;}
+.policy-bargain .right .main .msg .tr-3 textarea{ display: inline-block;width: 42%; margin-left: 0; vertical-align: top;}
+.policy-bargain .right .main .msg .tr-5 div{ line-height: 18px; padding: 3px 10px; margin: 5px 0;}
+.policy-bargain .right .main .msg td .td-checkbox{ margin:3px 0 0 55px; border: 0px solid red; width: 79%;}
+.policy-bargain .right .main .msg td .td-checkbox input{ margin-left:15px;}
+.policy-bargain .right .main .msg td .td-checkbox input:first-child{ margin-left:3px;}
+.policy-bargain .right .main .msg td .td-checkbox .check-7{ margin-left: 3px;}
+.policy-bargain .right .main .msg .tr-3 .td-checkbox{ margin-left: 50px;}
+.policy-bargain .right .main .msg .tr-3 .time{ width: 5%;}
+.policy-bargain .right .main .msg .tr-time select{ width: 5%;}
+.policy-bargain .right .main .msg tr:first-child .td-radio input{ width: auto;}
+.policy-bargain .right .main .msg td .xing{color: red; display: inline; vertical-align: top ; margin: 0 5px 0 15px;}
+.policy-bargain .right .main .msg .zhe td .td-title{ display: inline; vertical-align: top ; }
+.policy-bargain .right .main .msg .state-2{ display: none; }
+.policy-bargain .right .main .msg .text-center input{ text-align: center; }
+.policy-bargain .right .main .msg .rmk input{ width: 95%; }
+.policy-bargain .right .main .msg .rmk-2 input{ width: 90.6%; }
+.policy-bargain .right .main .msg .tr-10 textarea{ display: inline-block; width: 87%; vertical-align: top; margin-left: 0; }
+.policy-bargain .right .operation{ text-align: center; margin:20px 0 ;}
+.policy-bargain .right .operation input{ vertical-align: middle;}
+.policy-bargain .right .operation button{ color: #fff; border: 0; margin-right: 10px; width: 8%; height: 30px; vertical-align: middle;}
+.policy-bargain .right .operation .close,.policy-bargain .right .operation .remove{background: #666;}
+.policy-bargain .right .operation .save,.policy-bargain .right .operation .save-and{background: #009dda;}
+.policy-bargain .right .operation div{display: inline; }
+.right .condition tr:first-child td{ padding-top: 10px;}
+.rule-alter .right .condition tr.padding-bottom td{ padding-bottom: 15px;}
+.rule-alter .right .condition .btn-td2{ text-align: left; padding-right:25px;}
+.rule-alter .right .condition .btn-td2 button{color: #fff; background:#009dd9; width: 55px; height: 30px; border: 0; }
+.rule-alter .right .list .value{border: 0;}
+.rule-alter .right .list .value .list-tab .td-1{width: 1%;}
+.rule-alter .right .list .value .list-tab tr .td-1{border-left:1px solid #d0d0d0; }
+.rule-alter .right .list .value .list-tab tr .td-2{border-right:1px solid #d0d0d0; width:5%}
+.rule-alter .right .list .value .list-tab tr td{ height: 35px;}
+.rule-alter .right .list .value .list-tab tr.tr-1 {font-weight: bold; }
+.policy-bargain.rule-add .right .main .msg tr:first-child input[type='radio']{ width: auto;}
+.policy-bargain.rule-add .right .main .msg .tr-3 textarea{ width: 84%;}
+.policy-bargain.rule-add .right .main .msg .tr-1 select{ width: 12%; margin-right: 15px}
+.policy-bargain.rule-add .right .main .msg .tr-1 input[type='checkbox']{ width:auto;}
+.policy-bargain.rule-add .right .main .div-msg{ border: 1px dashed #d0d0d0;margin-top: 7px;}
+.policy-bargain.rule-add .right .main .div-msg a{ text-decoration: underline;}
+.policy-bargain.rule-add .right .main .div-msg .msg{ margin-top: -17px;}
+.policy-bargain.rule-add .right .main .div-msg .msg .span-1{ background: #fff;}
+.policy-bargain.rule-add .right .main .div-msg .msg td{ border-bottom:1px dashed #d0d0d0;}
+.policy-bargain.rule-add .right .main .div-msg .msg tr:first-child td{ border-bottom:0; }
+.policy-bargain.rule-add .right .main .div-msg .msg tr td input[type='text']{ margin-left: 3px; width: 5%;}
+.policy-bargain.rule-add .right .main .div-msg .msg tr td select{  width: 8%;}
+.policy-bargain.rule-add .right .main .div-msg .msg tr td .k{ display: inline; margin: 0 35px;}
+.policy-bargain.rule-add .right .main .div-msg .msg tr.last-tr td{ border-bottom:0;}
+.policy-bargain.rule-add .right .main .div-msg .msg tr.last-tr td .k{ margin: 0 32px;}
+.policy-bargain.rule-add .right .main .msg tr:first-child td input[type='text']{ width: 8%;}
+.policy-bargain.rule-add .right .main .msg .last-tr textarea{ display: inline; vertical-align: top; margin-left: 0;}
+.policy-bargain.rule-add .right .main .msg.condition-select select{ width:12%;margin-right: 15px;}
+.policy-bargain.rule-add .right .main .msg.condition-select input[type='checkbox']{width:auto;}
+.policy-bargain.rule-add .right .main .msg.condition-select textarea{display: inline; vertical-align: top; margin-left: 0;}
+/*.policy-bargain.rule-add .right .main .msg tr:first-child .td-1 input*/
+.policy-bargain.rule-add .right .main.main-1 .msg tr:first-child td input[type='text']{ width:68%;}
+/*.rule-alter .right .main .msg tr td input[type='radio']*/

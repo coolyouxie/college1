@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://cxf.apache.org/jaxws
+       http://cxf.apache.org/schemas/jaxws.xsd ">
+	
+	<!-- 扫描study.project包里下的所有class文件，配置注解的类全都装入容器中进行管理 -->
+	<aop:aspectj-autoproxy proxy-target-class="true"/>
+    <context:component-scan base-package="com.study.college" />
+    <context:annotation-config />
+    
+    <!-- 引入jdbc配置文件 -->
+    <!-- 引用freemarker配置文件 -->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="false">
+        <property name="order" value="1"/>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="locations">
+            <list>
+                <value>classpath*:jdbc-study.properties</value>
+                <value>classpath*:freemarker.properties</value>
+            </list>
+        </property>
+    </bean>
+    
+    <tx:annotation-driven transaction-manager="transactionManager" />
+
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="globalRollbackOnParticipationFailure" value="false" /> 
+    </bean>
+    
+    <!--创建jdbc数据源 -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"><value>${jdbc.driverClassName}</value></property>
+		<property name="url"><value>${jdbc.url}</value></property>
+		<property name="username"><value>${jdbc.username}</value></property>
+		<property name="password"><value>${jdbc.password}</value></property>
+		<property name="maxActive"><value>${jdbc.maxActive}</value></property>
+		<property name="maxWait"><value>${jdbc.maxWait}</value></property>
+		<property name="maxIdle"><value>${jdbc.maxIdle}</value></property>
+		<property name="initialSize"><value>${jdbc.initSize}</value></property>
+		<property name="removeAbandoned"><value>true</value></property>
+		<property name="testWhileIdle"><value>true</value></property>
+		<property name="testOnBorrow"><value>false </value></property>
+		<property name="validationQuery"><value>SELECT 1 FROM DUAL</value></property>
+		<property name="validationQueryTimeout"><value>10</value></property>
+	</bean>
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:persistence-mybatis-config.xml" />
+        <property name="mapperLocations" value="classpath*:com/study/college/persistence/mapper/*.xml" />
+    </bean>
+    
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+         <property name="basePackage" value="com.study.college.persistence.mapper" /> 
+         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+    </bean>
+
+	<import resource = "classpath:META-INF/cxf/cxf.xml" />
+	<import resource = "classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource = "classpath:META-INF/cxf/cxf-servlet.xml" /> 
+	
+	
+	<jaxws:endpoint id = "userManager" address = "/TestService" implementorClass = "com.study.college.ws.server.ITestService" >
+         <jaxws:implementor >
+             <bean  id = "userServiceImpl" class = "com.study.college.ws.server.TestServiceImpl" >
+                 <!-- <property name = "userDao">
+                     <ref bean = "userDao" />
+                 </property> -->
+             </bean >
+         </jaxws:implementor>
+  </jaxws:endpoint > 
+    
+    <!-- <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean> -->
+    
+    <!-- <tx:annotation-driven transaction-manager="txManager"/>
+    <aop:config>
+        <aop:pointcut id="appService" expression="execution(* com.study.college.service.*Service*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="appService"/>
+    </aop:config>
+    <aop:aspectj-autoproxy /> -->
+    
+    <!-- <import resource="classpath:applicationContext-business-service-business.xml" /> -->
+</beans>

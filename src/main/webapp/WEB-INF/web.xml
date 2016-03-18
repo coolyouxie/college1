@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>lvf-study-web</display-name>
+	<!-- Spring 配置文件路径，此处可将Spring MVC的相关配置内容配置到Spring的配置文件applicationContext.xml中，共享同一个配置文件即可 -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:applicationContext.xml</param-value>
+    </context-param>
+	
+	<context-param>
+	    <param-name>log4jConfigLocation</param-name>
+	    <param-value>classpath:log4j.properties</param-value> 
+	</context-param>
+	
+	<context-param>
+        <param-name>log4jRefreshInterval</param-name>
+        <param-value>3000</param-value>
+    </context-param>
+	
+	<context-param>
+        <param-name>webAppRootKey</param-name>  
+        <param-value>webapp.study-web</param-value>  
+    </context-param>
+    
+	<!-- Spring 监听器 配置 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+    <listener>
+    	<listener-class>  
+            org.springframework.web.util.Log4jConfigListener
+        </listener-class> 
+    </listener>
+	
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+	<!-- Spring字符编码过滤器 -->
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- <filter>
+		<filter-name>httpMethodFilter</filter-name>
+		<filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>httpMethodFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping> -->
+	
+	<!-- Spring mvc 配置，配置文件名称默认为{servlet-name}-servlet.xml，路径默认在/WEB-INF/下 -->
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!-- <init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath*:springmvc-servlet.xml</param-value>
+		</init-param> -->
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/errorpage/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>405</error-code>
+		<location>/WEB-INF/errorpage/405.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/errorpage/500.jsp</location>
+	</error-page>
+	
+	<welcome-file-list>
+    	<welcome-file>/WEB-INF/ftl/login.jsp</welcome-file>
+	</welcome-file-list>
+	
+	
+	<!-- <servlet>
+		<servlet-name>UserCheckProxy</servlet-name>
+		<servlet-class>com.lvmama.lvf.offline.web.controller.init.DelegatingServletProxy</servlet-class>
+		<init-param>
+			<param-name>targetServlet</param-name>
+			<param-value>initVstTaskServlet</param-value>业务servlet配置为spring的bean时的名字  
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserCheckProxy</servlet-name>
+		<url-pattern>/UserCheck.do</url-pattern>
+	</servlet-mapping> -->
+	
+	<servlet>
+		<servlet-name>CXFServlet</servlet-name>
+		<servlet-class>
+			org.apache.cxf.transport.servlet.CXFServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CXFServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping> 
+</web-app>
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.study.college.persistence.mapper.UserMapper">
+	<resultMap id="resultMap" type="com.study.college.dto.human.User">
+		<id column="ID" jdbcType="DECIMAL" property="id" />
+	    <result column="NAME" jdbcType="VARCHAR" property="name" />
+	    <result column="ACCOUNT" jdbcType="VARCHAR" property="account" />
+	    <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
+	    <result column="TYPE" jdbcType="VARCHAR" property="type" />
+	    <result column="CODE" jdbcType="VARCHAR" property="code" />
+	    <result column="LEVEL" jdbcType="VARCHAR" property="level" />
+	    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+	    <result column="LATEST_LOGIN_TIME" jdbcType="VARCHAR" property="latestLoginTime" />
+	    <result column="LATEST_LOGOUT_TIME" jdbcType="VARCHAR" property="latestLogoutTime" />
+	    <result column="CREATE_TIME" jdbcType="VARCHAR" property="createTime" />
+	    <result column="UPDATE_TIME" jdbcType="VARCHAR" property="updateTime" />
+		<!-- <association property="major" column="MAJOR_ID"
+			select="com.lvmama.study.persistence.mapper.MajorMapper.getById" /> -->
+	</resultMap>
+	
+	<sql id="select_columns">
+		ID, NAME,ACCOUNT,PASSWORD,TYPE, CODE, EMAIL, LEVEL, LATEST_LOGIN_TIME, LATEST_LOGOUT_TIME,CREATE_TIME,UPDATE_TIME
+	</sql>
+	
+	<sql id="insert_columns">
+		NAME,ACCOUNT,PASSWORD,TYPE, CODE, EMAIL, LEVEL, LATEST_LOGIN_TIME, LATEST_LOGOUT_TIME,CREATE_TIME,UPDATE_TIME
+	</sql>
+	
+	<select id="getUser" resultMap="resultMap">
+		select 
+			<include refid="select_columns"/> 
+		from t_user 
+		where 
+			#{user.account} = account and #{user.password} = password
+	</select>
+	
+	<select id="getById" resultMap="resultMap">
+		select * from t_user where id =#{id}
+	</select>
+	
+	<update id="updateById">
+		UPDATE t_user
+		<set>
+			<if test="i.name != null and i.name != ''">
+				name = #{i.name,jdbcType=VARCHAR},
+			</if>
+			<if test="i.major != null and i.major.id != null and i.major.id != ''">
+				major_id = #{i.major.id,jdbcType=DECIMAL},
+			</if>
+			<if test="i.level != null and i.level != '' ">
+				arrv_city_id = #{i.arrvCity.id,jdbcType=DECIMAL},
+			</if>
+			<if test="i.age != null and i.age != ''">
+				age = #{i.age,jdbcType=DECIMAL},
+			</if>
+			<if test="i.sex != null and i.sex != ''">
+				sex = #{i.sex,jdbcType=VARCHAR},
+			</if>
+			<if test="i.number != null and i.number != '' ">
+				number = #{i.number,jdbcType=VARCHAR},
+			</if>
+			<if test="i.headMaster != null and i.headMaster != ''">
+	        	HEAD_MASTER = #{i.headMaster,jdbcType=VARCHAR},
+	      	</if>
+			type = 'TEACHER',
+			update_time = sysdate
+    	</set>
+    	WHERE ID = #{id,jdbcType=DECIMAL}
+	</update>
+
+    <!-- 根据productId获取product -->
+    <select id="query" resultMap="resultMap">
+   		select  <include refid="select_columns"/>
+        FROM t_user
+   	</select>
+
+	<select id="deleteById" resultType="java.lang.Integer">
+		DELETE t_user where id = #{id,jdbcType=DECIMAL}
+	</select>
+	
+	<select id="getProductByCityIds" resultMap="resultMap">
+		select 
+		<include refid="select_columns"/>
+		FROM t_user
+		<trim prefix="WHERE" prefixOverrides="AND">
+			<if test="deptCityId != null and deptCityId != '' ">
+				AND DEPT_CITY_ID = #{deptCityId}
+			</if>
+			<if test="arrvCityId != null and arrvCityId != '' ">
+				AND ARRV_CITY_ID = #{arrvCityId}
+			</if>
+		</trim>
+	</select>
+	
+	<insert id="insert">
+		insert into t_user (
+			<include refid="insert_columns"/>
+		)
+		values 
+		(
+		   #{name,jdbcType=VARCHAR},
+		   #{age,jdbcType=DECIMAL},
+		   #{type,jdbcType=VARCHAR},
+		   #{sex,jdbcType=VARCHAR},
+		   #{code,jdbcType=VARCHAR},
+		   #{major.id,jdbcType=DECIMAL},
+		   #{level,jdbcType=VARCHAR},
+		   #{headMaster,jdbcType=VARCHAR},
+		   #{createTime,jdbcType=TIMESTAMP},
+		   #{updateTime,jdbcType=TIMESTAMP}
+		 )
+	</insert>
+</mapper>

@@ -1,0 +1,202 @@
+html{ font-family:"microsoft yahei", "Arial"; font-size: 12px;}
+body{padding-bottom: 200px;}
+li{ list-style: none;}
+select,input[type='text'],textarea{border: 2px solid #848484;border-bottom: 0;border-right: 0; background: #fff; vertical-align: middle;}
+input[type='radio'],input[type='checkbox']{ vertical-align: top;}
+.container a{ text-decoration: none; color: #21a8dc; }
+.container{ min-width: 1000px; margin: 0 auto;  border: 0px solid red;}
+.top .nav{padding: 0 10px;}
+.top .msg{margin-top:7px;background: #f6f6f6;}
+.top .msg .title{ background: #009dda; padding: 0 10px; height: 30px; line-height: 30px; color: #b0dcff; }
+.top .msg table{background: #f6f6f6; width: 100%; border: 1px solid #e4e4e4;}
+table{ width: 100%; border: 1px solid #f0f0f0;}
+.top .msg table tr{height: 50px;}
+.top .msg table tr td{ padding: 0 12px; }
+.top .msg table tr td i{ font-style: normal; margin: 0 3px; color: red;}
+.top .msg table tr td img{ width: 18px; vertical-align: bottom; margin-right: -2px;}
+.top .msg table tr td:first-child div{padding-left: 20px;}
+.top .msg table tr td a{ text-decoration: underline;}
+.top .msg table tr td number{ text-decoration: underline;}
+.top .msg table tr td .div-2{padding-left: 40px;}
+.top .msg table tr td .div-1{color: #999;}
+.top .msg table tr td .name{color: #999; padding-right: 14px;}
+.top .msg table tr td.td-5{color: #ccc;}
+.top .msg table tr td.td-6{color: #ff8500;}
+.price{ margin-top: 50px;}
+.price .title{ padding: 0 10px;font-weight: bold;}
+.price table{ text-align: center; margin-top: 7px; width: 97%; background: #fff;color: #333333;}
+.price table tr{ height: 33px;}
+.price table tr:first-child{ background: #999;color: #fff; height: 30px;}
+.price table tr td{ width: 11%;border-right: 1px solid #e4e4e4;border-bottom: 1px solid #e4e4e4;}
+.price table tr:first-child td{ width: 8%; border-right: 1px solid #fff;}
+.price table tr td.last-td{ border-right: 0;width: 12%;}
+.price table tr.tr-3{background: #f3f9ff;}
+.price table tr.tr-3 td{ text-align: left; color: #000; padding-left: 3px;border-bottom: 1px solid #e4e4e4;}
+.price table tr.last-td td{ border-bottom: 0;}
+.withdraw{ background: #f3f9ff;width: 97%; margin-top: 10px; text-align: center; border: 1px solid #d6e5f1;}
+.withdraw tr td{border-right: 1px solid #d6e5f1;border-bottom: 1px solid #d6e5f1;height: 33px;}
+.withdraw tr:first-child td:first-child{ width: 2%; padding: 15px 12px; height: auto;border-bottom: 0;}
+.withdraw tr.first-tr td.td-2{ width: 10%;}
+.withdraw tr td.last-td{ text-align: left; border-right: 0; padding-left: 5px;}
+.withdraw tr.last-tr td{border-bottom: 0; }
+.withdraw tr.last-tr td:first-child{color: red; }
+.passenger table tr td{ width: 11%;border-right: 1px solid #e4e4e4;border-bottom: 1px solid #e4e4e4;}
+.passenger,.order,.distribution{ margin-top: 20px; width: 97%;}
+.passenger .title,.order .title,.distribution .title{background: #009dda; height:30px; color:#b0dcff; line-height: 30px; padding: 0 10px; }
+.passenger .msg,.order .msg,.distribution .msg{ border: 1px solid #e4e4e4;  padding: 10px 20px 20px 20px; }
+.passenger .msg .name,.passenger .insurance{border: 0px solid red; padding: 0; margin: 0; border-bottom:1px dashed #e4e4e4; height: 25px;}
+.passenger .msg .name li,.passenger .insurance li{float: left; margin-right: 30px;}
+.passenger .msg .name li:first-child,.passenger .insurance li:first-child{ margin-right: 0;}
+.passenger .msg .name li.li-2{ color: #ff8500;}
+.passenger .msg .name li img{ width: 25px; vertical-align: top; margin-top: 0px;}
+.passenger .msg .name li input,.passenger .insurance li input{ vertical-align: top;}
+.passenger .msg .name li a{ text-decoration: underline;}
+.passenger .msg .name li:last-child{ margin-left: -16px;}
+.passenger .insurance{ border: 0; padding:7px 0 2px 0;}
+.passenger .insurance li img{ width: 22px;vertical-align: top; margin-left: 2px;margin-right:1px;}
+.passenger .insurance li a{  color: #000; text-decoration: underline; }
+.passenger .insurance li div{color: #ff8500; display: inline; vertical-align: top;}
+.passenger .insurance li select{ height: 20px; line-height: 15px; vertical-align: top; margin-top: 1px;}
+.passenger .msg .div-list{ border: 1px solid #e4e4e4; text-align: center; background: #f6f6f6; padding: 0 5px 15px 5px;}
+.passenger .msg .list{ text-align: center; }
+.passenger .msg .list tr{height: 30px;}
+.passenger .msg .list tr:first-child{height: 25px; text-align: center;}
+.passenger .msg .list tr:first-child td{border-bottom: 1px dashed #e4e4e4;}
+.passenger .msg .list tr td select{ width: 90%;border:1px solid #e4e4e4;}
+.passenger .msg .list tr td input{ width: 90%;border:1px solid #e4e4e4;}
+/*.passenger .msg .list tr td:nth-child(7) input{ width: 100%;}*/
+/*.passenger .msg .list tr td:nth-child(8) input{ width: 100%;}*/
+.passenger .msg .list tr td select{ width: 100%;}
+.passenger .msg .list tr td:nth-child(4) select{width: 105%; border: 0;border-top: 2px solid #848484;border-right: 2px solid #848484;}
+.passenger .msg .list tr a{ text-decoration: underline; cursor:pointer;}
+.passenger .msg .list tr td:first-child{ width: 4%; text-align: center;}
+.passenger .msg .list tr td.td-2{ width: 5%;}
+.passenger .msg .list tr td.td-3{ width: 5%;}
+.passenger .msg .list tr td.td-4{ width: 5%;}
+.passenger .msg .list tr td.td-5{ width: 7%;}
+.passenger .msg .list tr td.td-6{ width: 15%;}
+.passenger .msg .list tr td.td-7{ width: 15%;}
+.passenger .msg .list tr td.td-8{ width: 15%;}
+.passenger .msg .list tr td.td-9{ width: 5%;}
+.passenger .msg .list tr td.td-10{ width: 38%;}
+.passenger .msg .add{border: 1px dashed #009dda; margin: 2px 15px 0 15px; height: 30px; line-height: 30px; text-align: left; padding-left: 35px; color: #009dda;}
+.passenger .msg .add img{vertical-align: top; margin-top: 7px;}
+.order .msg{background: #f6f6f6; padding: 20px;}
+.order .msg font{ font-size: 13px;}
+.order .msg:after,.distribution .msg .address:after,.money .top:after,.money ul li:after{content: ""; display: block;clear: both;}
+.order .msg span{  display: block; float: left; width: 33%; }
+.order .msg span input{   width: 74%;}
+.order .msg span font{ width: 25%; display: inline-block; }
+.order .msg span.span-1 font{ width: 16%; display: inline-block;text-align: right;}
+.order .msg span.span-3 font{ width: 20%;padding-left: 16px;}
+.order .msg span.span-3 input{ width: 74%;}
+.order .msg div textarea{ margin-top: 15px; vertical-align: top; width: 93%;}
+.order .msg div font{ padding-top: 25px;display: inline-block;}
+.distribution{ background: #f6f6f6;}
+.distribution .msg span{ margin-right: 15px;}
+.distribution .msg input{ vertical-align: top;}
+.distribution .msg ul{padding: 0; margin: 0; margin-left: -5px;}
+.distribution .msg ul li{ margin-top: 8px; color: #999999;}
+.distribution .msg .all{ margin-top: 10px; display: block; text-decoration: underline; cursor: pointer;}
+.distribution .msg .address{border: 1px dashed #009dda; padding: 10px 10px 15px 10px; margin-top: 8px; height: 150px;}
+.distribution .msg .address span{ color:#009dda; display: block; }
+.distribution .msg .address span img{ vertical-align: top;margin-right: 5px;  }
+.distribution .msg .address div{ margin-top: 10px; float: left;  width: 33%; }
+.distribution .msg .address div input{ width: 75%; }
+.distribution .msg .address div span{ color: #000; display: inline-block; padding-left: 15px; vertical-align: top;}
+.distribution .msg .address div.div-1 span:first-child{ margin-left: 12px; }
+.distribution .msg .address div span:first-child{ margin-left: 0;}
+.distribution .msg .address div select{ margin-right: 10px;}
+.distribution .msg .address div.div-4,.distribution .msg .address div.div-5{ width: 100%;}
+.distribution .msg .address div.div-4 input{ width: 72%;}
+.distribution .msg .address div.div-5 input{ width: 12%;}
+.distribution .msg .address div a{ text-decoration: underline; display: inline-block; vertical-align: top; margin-left: 10px;}
+.distribution .msg .address div button{ background: #009dda; border: 0; color: #fff; padding: 3px 15px; margin-left: 18px;}
+.distribution .msg .company{ margin: 10px 28px;}
+.distribution .msg .company span{vertical-align: top;}
+.distribution .msg .company select{ width:12%;}
+.distribution .msg .company div{ display: inline; vertical-align: top; color: #ff8500; margin-left: 5px;}
+.distribution .msg .company a{ color: #999; margin-left: 50px;vertical-align: top;}
+.money{ background: #fffaed; border: 1px solid #f0e9d6; padding: 20px; width: 25%; margin-top:50px; }
+.money .top div.first-child{ float: left; font-weight: bold;}
+.money .top div.last-child{ float: right; color: #666;}
+.money .top div.last-child span{ font-size: 20px; color: #ff6600; display: inline-block; vertical-align: top; margin-top: -5px;}
+.money .more{ text-align: right; margin-top: 5px;color: #0066cc;}
+.money ul{ padding: 0; margin: 0;}
+.money .ul-1{ margin-top: -5px;}
+.money ul li{position:relative;margin-top: 5px; position: relative; color: #666; border-bottom: 1px dashed #e4e4e4; height: 15px;}
+.money ul li:first-child span{ font-weight: bold;color: #000;}
+.money ul li span{ position: absolute; top:5px;}
+.money ul li span:first-child{ left: 0; background: #fffaed;}
+.money ul li span.last-child{ right:0; background: #fffaed;}
+.detail{ position: fixed; bottom: 0; padding: 10px 15px; background: #f0f0f0; left: 7px; right: 10px; border: 1px solid #e4e4e4;}
+/*.detail .tab-price a{ text-decoration: underline;}*/
+/*.detail .tab-price{ text-align: center;}*/
+/*.detail .tab-price tr{ color: #000; font-weight: bold;font-size: 14px;}*/
+/*.detail .tab-price tr td{width: 6%; height: 25px;}*/
+/*.detail .tab-price .tr-1{ color: #999;font-size: 13px; }*/
+/*.detail .tab-price .tr-1 td.last-td{font-weight: bold; font-size: 15px; width: 13%;border-bottom: 0; width: 24%;}*/
+/*.detail .tab-price .tr-1 span{ color: #ff8500;}*/
+/*.detail .tab-price .tr-1 td.last-td button{ border: 0; color: #fff; background: #ff8500; padding: 5px 10px; margin-left: 15px; }*/
+/*.detail .tab-price td img{border: 0;}*/
+.detail .tab-detail .tr-1 td{  border-bottom: 1px dashed #ccc;}
+.detail .tab-detail .tr-2 td,.detail .tab-detail .last-tr td{  font-weight: bold; font-size: 15px; color: #000;}
+.detail .tab-detail .tr-1 td:first-child,.detail .tab-detail .tr-1 td.last-td{  border-bottom: 0;}
+.detail .tab-detail{ text-align: center; margin-top: -7px; }
+.detail .tab-detail tr td{width: 5%;}
+.detail .tab-detail tr td.td-1{color:#a4a4b0;}
+.detail .tr-1{color: #999;}
+.detail .tr-1 .last-td{font-weight: bold;font-size: 15px; width: 20%;}
+.detail .tr-1 .last-td span{color: #ff8500;font-size: 17px;}
+.detail .tr-1 .last-td button{border: 0; color: #fff; margin-left: 10px; height: 28px; line-height: 28px; vertical-align: middle; width: 80px;}
+.detail .tr-1 .last-td .btn1{ background: #ff8500;display: none;}
+.detail .tr-1 .last-td .btn-one{ background: #ff8500;}
+.detail .tr-1 .last-td .btn2{ background: #009dda;display: none;}
+.detail .tr-1 .last-td .btn3{ background: #666;display: none;}
+.detail .tab-detail tr.tr-title{ display: none;}
+/*.detail .tab-detail tr.tr-title .last-tr{ display: none;}*/
+.detail .tab-detail .a-detail{ cursor: pointer;}
+.icheckOrder .top .hint{border: 1px solid #ffb027; background: #fff7e9; height: 25px; line-height: 25px; padding: 0 10px; margin: 10px 0;}
+.icheckOrder .top .hint div{ color: #ffb070; display: inline; vertical-align: top;}
+.icheckOrder .top .msg table td .div-1 span{ color: #000; font-weight: bold;}
+/*.icheckOrder .top .msg table td.td-2{ color: #000; font-weight: bold; font-size: 15px;}*/
+.icheckOrder .top .msg .tab-1{ border: 0;}
+.icheckOrder .top .msg{ border: 1px solid #e4e4e4; border-top: 0;}
+.icheckOrder .top .msg .price{ margin: 0 20px;}
+.icheckOrder .top .msg .price table{ background: #fff;}
+.icheckOrder .top .msg .price table tr,.icheckOrder .top .msg .withdraw tr{ height: 33px;}
+.icheckOrder .top .msg .withdraw{ margin: 10px 20px 5px 20px; width: 97%;}
+.icheckOrder .top .msg .withdraw tr{ background: #f3f9ff; }
+.icheckOrder .top .msg{ margin-bottom: 15px; padding-bottom: 20px;}
+.icheckOrder .passenger-list{ background: #f6f6f6; border: 1px solid #e4e4e4; padding: 10px 10px 0 10px; margin-bottom: 20px;}
+.icheckOrder .passenger-list .title{ border-bottom: 1px solid #e4e4e4; padding:0 5px 5px 5px; color: #999;}
+.icheckOrder .passenger-list .title a{ float: right; text-decoration: underline;}
+.icheckOrder .passenger-list table{ text-align: center; border: 0;}
+.icheckOrder .passenger-list table input{ text-align: center; display:none;}
+.icheckOrder .passenger-list table tr{height: 33px;}
+.icheckOrder .passenger-list table td{border-bottom: 1px dashed #ccc;}
+.icheckOrder .passenger-list table .last-tr td{ border: 0;}
+.icheckOrder .passenger-list table .last-tr { border: 0;}
+.icheckOrder .passenger-list .update{  display: none;}
+.icheckOrder .passenger-list ul{ padding: 5px 0 8px 0; margin: 0;}
+.icheckOrder .passenger-list ul li{height: 20px; line-height: 20px;}
+.icheckOrder .detail .last-tr{ font-weight: bold; font-size: 15px;}
+.icheckOrder .tr-1 .last-td button.btn1{ display: inline;}
+.icheckOrder .tr-1 .last-td button.btn2{ display: inline;}
+.icheckOrder .tr-1 .last-td button.btn3{ display: inline;}
+.tab{margin: 10px 0; }
+.tab .tab-cot{ border: 1px solid #009dda; padding: 10px; width: 95.5%;}
+.tab .tab-cot .withdraw{ width: 100%; margin-top: 0;}
+.tab .tab-title button{ border: 0; min-width: 8%; height: 30px; line-height: 30px; color: #fff; margin-right: -5px;}
+.tab .tab-title button strong{ font-weight: normal; margin-left: 3px;}
+.tab .tab-title button span{ border: 1px solid #fff; padding:0 1px; color: #fff;margin-left: 6px; font-size: 10px; vertical-align: top;}
+.tab .tab-title button.btn1{background: #6ac9ed;}
+.tab .tab-title button.btn1 strong{ color: #0099ff;}
+.tab .tab-title button.btn2{background: #66f29a;}
+.tab .tab-title button.btn2 strong{ color: #00cc00;}
+.tab .tab-title button.btn3{background: #ffd56c;}
+.tab .tab-title button.btn3 strong{ color: #e4a41c;}
+.order-tab .withdraw{ display: none;}
+.order-tab .withdraw:first-child{ display: block;}
+
+.passenger .div-list .list .tr-clone{ display: none;}
